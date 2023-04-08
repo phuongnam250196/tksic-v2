@@ -1,0 +1,5 @@
+.a {
+  color: red; }
+  .a .b {
+    background-color: blue;
+    font-size: 20px; }
