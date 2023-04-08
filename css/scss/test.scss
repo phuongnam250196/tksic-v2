@@ -1,7 +1,335 @@
-.a {
-    color: red;
-    .b {
-        background-color: blue;
-        font-size: 20px;
+#investment {
+    .investment-box {
+        .title {
+            font-size: 29px;
+            color: #005aaa;
+            font-weight: 700;
+            font-family: "Roboto";
+            text-align: center;
+            padding: 20px 0;
+        }
+        .desc {
+            font-size: 18px;
+            color: #000000;
+            font-weight: 500;
+            font-family: "Roboto";
+            text-align: center;
+        }
+        .text {
+            font-size: 18px;
+            color: #005aaa;
+            font-weight: 400;
+            font-family: "Roboto";
+            text-align: center;
+        }
+        .img {
+            text-align: center;
+            padding: 30px 0;
+        }
+        .investment-form {
+            text-align: center;
+            .investment-form-input {
+                width: 283px;
+                height: 38px;
+                border-radius: 10px;
+                background-color: #bfe2ff;
+                font-size: 16px;
+                color: #000000;
+                font-weight: 250;
+                font-family: "Roboto";
+            }
+            .btn {
+                font-size: 16px;
+                color: #ffffff;
+                font-weight: 500;
+                font-family: "Roboto";
+                width: 162px;
+                height: 38px;
+                border-radius: 10px;
+                background-color: #005aaa;
+            }
+        }
+        .or {
+            font-size: 18px;
+            color: #005aaa;
+            font-weight: 400;
+            font-family: "Roboto";
+            text-align: center;
+            padding: 20px 0;
+        }
+        .other {
+            text-align: center;
+        }
+    }
+}
+
+#reason {
+    border-radius: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(6,7,7,0.2));
+    background-color: #fcfcfc;
+    padding: 40px 100px;
+    margin-bottom: 40px;
+    .reason-box {
+        .title-main {
+            font-size: 29px;
+            color: #0d61ad;
+            font-weight: 700;
+            font-family: "Roboto";
+            text-transform: uppercase;
+        }
+        .list {
+            margin-top: 40px;
+            .item {
+                display: flex;
+                margin-bottom: 20px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .left {
+                    width: 48px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .right {
+                    color: #005aaa;
+                    width: calc(100% - 48px);
+                    padding-left: 12px;
+                    .title {
+                        font-size: 20px;
+                        font-weight: 700;
+                        font-family: "Roboto";
+                    }
+                    .desc {
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#investor_training {
+    border-radius: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(6,7,7,0.2));
+    background-color: #fcfcfc;
+    padding: 40px 100px;
+    margin-bottom: 40px;
+    .investor_training-box {
+        .title-main {
+            font-size: 29px;
+            color: #0d61ad;
+            font-weight: 700;
+            font-family: "Roboto";
+            text-transform: uppercase;
+        }
+        .list {
+            margin-top: 40px;
+            .item {
+                display: flex;
+                margin-bottom: 20px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .left {
+                    width: 48px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .right {
+                    color: #005aaa;
+                    width: calc(100% - 48px);
+                    padding-left: 12px;
+                    .title {
+                        font-size: 20px;
+                        font-weight: 700;
+                        font-family: "Roboto";
+                    }
+                    .desc {
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#newspapers {
+    border-radius: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(6,7,7,0.2));
+    background-color: #fcfcfc;
+    padding: 40px 100px;
+    margin-bottom: 40px;
+    .newspapers-box {
+        font-family: "Roboto";
+        color: #005aaa;
+        .title {
+            font-size: 29px;
+            font-weight: 700;
+        }
+        .desc {
+            font-size: 16px;
+            font-weight: 700;
+            padding: 20px 0;
+        }
+        .img {
+
+        }
+    }
+}
+
+.title-main {
+    font-size: 29px;
+    color: #0d61ad;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-transform: uppercase;
+}
+#strategy {
+    .title-main {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    .strategy-box {
+        background-color: #fcfcfc;
+        .strategy-form {
+            .form-title {
+                font-size: 26px;
+                color: #0d61ad;
+                font-weight: 300;
+                font-family: "Roboto";
+                text-align: center;
+            }
+            .strategy-item {
+                margin-bottom: 32px;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 6px;
+                    height: 100%;
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    background-color: #0d61ad;
+                }
+                input {
+                    width: 417px;
+                    height: 56px;
+                    border-radius: 10px;
+                    background-color: #f3f3f3;
+                    font-size: 16px;
+                    color: #9e9e9e;
+                    font-weight: 400;
+                    font-family: "Roboto";
+                    border: none;
+                    padding-left: 32px;
+                }
+                textarea {
+                    width: 417px;
+                    height: 94px;
+                    border-radius: 10px;
+                    background-color: #f3f3f3;
+                    font-size: 16px;
+                    color: #9e9e9e;
+                    font-weight: 400;
+                    font-family: "Roboto";
+                    border: none;
+                    padding-left: 32px;
+                }
+            }
+            .note {
+                font-size: 16px;
+                color: #0d61ad;
+                font-weight: 400;
+                font-family: "Roboto";
+                text-align: center;
+            }
+            .strategy-btn {
+                width: 190px;
+                height: 55px;
+                border-radius: 10px;
+                background-color: #025aaa;
+                font-size: 16px;
+                color: #ffffff;
+                font-weight: 700;
+                font-family: "Roboto";
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+.footer-2 {
+    background: #fcfcfc;
+    padding: 60px 0;
+    .footer-first {
+        .img {
+
+        }
+        .desc {
+            font-size: 26px;
+            color: #005aaa;
+            font-weight: 700;
+            font-family: "Roboto";
+            margin: 16px 0;
+        }
+        .footer-box {
+            border-radius: 10px;
+            background-color: #eff2f6;
+            padding: 20px;
+            width: 70%;
+            display: inline-block;
+            .list {
+                .item {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 16px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    .img {
+                        width: 40px;
+                    }
+                    .text {
+                        font-size: 20px;
+                        color: #005aaa;
+                        font-weight: 400;
+                        font-family: "Roboto";
+                    }
+                }
+            }
+        }
+    }
+    .footer-second {
+        .title {
+            font-size: 29px;
+            color: #005aaa;
+            font-weight: 700;
+            font-family: "Roboto";
+            margin-bottom: 20px;
+        }
+        .list {
+            list-style: none;
+            li {
+                padding: 8px 0;
+                a {
+                    font-size: 20px;
+                    color: #005aaa;
+                    font-weight: 400;
+                    font-family: "Roboto";
+                }
+            }
+        }
     }
 }

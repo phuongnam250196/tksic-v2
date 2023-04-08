@@ -12,6 +12,7 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.css" rel="stylesheet">
+    <link href="css/scss/test.css" rel="stylesheet">
 </head>
 
 <body>
@@ -97,12 +98,10 @@
                                 <img src="./imgs/qr_code.png" alt="">
                                 <img src="./imgs/download_app.png" alt="">
                             </div>
-                            <div class="investment-form">
-                                <form action="">
-                                    <input type="text" placeholder="E-mail/Phone">
-                                    <button class="btn">Try MyTKSIC</button>
-                                </form>
-                            </div>
+                            <form action="" class="investment-form">
+                                <input type="text" placeholder="E-mail/Phone" class="investment-form-input">
+                                <button class="btn">Try MyTKSIC</button>
+                            </form>
                             <p class="or">Hoặc tiếp tục với</p>
                             <div class="other">
                                 <a href="#"><img src="./imgs/btn_google.png" alt=""></a>
@@ -121,7 +120,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="reason-box">
-                            <h3 class="title">LÝ DO <br>
+                            <h3 class="title-main">LÝ DO <br>
                                 KHÁCH HÀNG CHỌN TKSIC</h3>
                             <div class="list">
                                 <div class="item">
@@ -130,7 +129,7 @@
                                     </div>
                                     <div class="right">
                                         <h4 class="title">Công nghệ vượt trội</h4>
-                                        <p class="desc">Áp dụng hệ thống phân tích bằng trí tuệ
+                                        <p class="desc">Áp dụng hệ thống phân tích bằng trí tuệ <br>
                                             nhân tạo AI.</p>
                                     </div>
                                 </div>
@@ -167,12 +166,14 @@
             <section id="newspapers">
                 <div class="row">
                     <div class="col-md-6">
-                        <h3 class="title">BÁO CHÍ NÓI VỀ CHÚNG TÔI</h3>
-                        <p class="desc">TKSIC là dự án công nghệ tài chính mới thu hút sự quan tâm,
-                            chú ý của rất nhiều nhà đầu tư. Nhiều tạp chí, trang báo danh tiếng
-                            của Việt Nam cũng đưa tin về các giải pháp đầu tư và tích luỹ
-                            thông minh của TKSIC.</p>
-                        <img src="./imgs/img-2.png" alt="" class="img">
+                        <div class="newspapers-box">
+                            <h3 class="title">BÁO CHÍ NÓI VỀ CHÚNG TÔI</h3>
+                            <p class="desc">TKSIC là dự án công nghệ tài chính mới thu hút sự quan tâm,
+                                chú ý của rất nhiều nhà đầu tư. Nhiều tạp chí, trang báo danh tiếng
+                                của Việt Nam cũng đưa tin về các giải pháp đầu tư và tích luỹ
+                                thông minh của TKSIC.</p>
+                            <img src="./imgs/img-2.png" alt="" class="img">
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <img src="./imgs/ico-1.png" alt="">
@@ -185,7 +186,7 @@
                 <div class="row">
                     <div class="col-md-5">
                         <div class="investor_training-box">
-                            <h3 class="title">ĐÀO TẠO <br>
+                            <h3 class="title-main">ĐÀO TẠO <br>
                                 NHÀ ĐẦU TƯ</h3>
                             <div class="list">
                                 <div class="item">
@@ -229,7 +230,7 @@
 
             <!-- Chiến lược đầu tư thời kỳ siêu lạm phát -->
             <section id="strategy">
-                <h3 class="title">CHIẾN LƯỢC ĐẦU TƯ THỜI KỲ SIÊU LẠM PHÁT</h3>
+                <h3 class="title-main">CHIẾN LƯỢC ĐẦU TƯ THỜI KỲ SIÊU LẠM PHÁT</h3>
                 <div class="strategy-box">
                     <div class="row">
                         <div class="col-md-6">
@@ -251,7 +252,7 @@
                                 <div class="strategy-item">
                                     <textarea name="" id="" cols="30" rows="10" placeholder="Tin nhắn"></textarea>
                                 </div>
-                                <p class="note">Tại P 10.01, Lầu 10, Toà nhà MB Sunny Tower,
+                                <p class="note">Tại P 10.01, Lầu 10, Toà nhà MB Sunny Tower, <br>
                                     259 Trần Hưng Đạo, Cô Giang, Q.1, TP.HCM</p>
                                 <button type="button" class="strategy-btn">Đăng ký ngay</button>
                             </div>
@@ -262,7 +263,7 @@
 
             <!-- Các sản phẩm ai tksic -->
             <section id="ai">
-                <h3 class="title">CÁC SẢN PHẨM AI TKSIC</h3>
+                <h3 class="title-main">CÁC SẢN PHẨM AI TKSIC</h3>
                 <div class="ai-box">
                     <div class="ai-vip">AI TKSIC VIP</div>
                     <div class="list">
@@ -370,25 +371,6 @@
             <!-- Công cụ tính lãi -->
             <div class="ct">
                 <div class="main">
-                    <div class="title-head">
-                        <div class="w800">
-                            <h2><strong>Hi Vuong,</strong> Welcome Back!</h2>
-                            <div class="list">
-                                <div class="item active">
-                                    <img src="./images/ic-1.png" alt="">
-                                    <p>Quản lý danh mục</p>
-                                </div>
-                                <div class="item">
-                                    <img src="./images/ic-2.png" alt="">
-                                    <p>Quản lý vốn</p>
-                                </div>
-                                <div class="item">
-                                    <img src="./images/ic-3.png" alt="">
-                                    <p>Mở tài khoản đầu tư</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="around calculator">
                         <div class="box">
                             <div class="title-group">
@@ -663,7 +645,17 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="accumulation-box">
-                            
+                            <div class="text">Ứng Dụng</div>
+                            <h4 class="title">ĐẦU TƯ VÀ TÍCH LUỸ THÔNG MINH</h4>
+                            <div class="img">
+                                <img src="./imgs/tick.png" alt="">
+                            </div>
+                            <p class="text">Ứng dụng My TKSIC sử dụng công nghệ AI trong đầu tư, giao diện đơn giản, tối ưu,
+                                dễ dàng thao tác và sử dụng, mang đến những giải pháp mới mẻ,
+                                toàn diện và chuyên biệt nhất về đầu tư thông minh.</p>
+                                <div class="img2">
+                                    <img src="./imgs/tick.png" alt="">
+                                </div>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -674,14 +666,68 @@
 
         </div>
     </main>
-    <footer class="footer2">
+    <footer class="footer-2">
         <div class="container">
-            <div class="bottom">
-                <a href="" class="logout">
-                    <i class="fal fa-power-off"></i>
-                    <span>Đăng xuất</span>
-                </a>
-                <p class="text-nowrap">© 2021 TKSIC All right reserved</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-first">
+                        <img class="img" src="./imgs/logo.png" alt="">
+                        <p class="desc">Công Ty Cổ Phần TKSIC</p>
+                        <div class="footer-box">
+                            <div class="list">
+                                <div class="item">
+                                    <div class="img"><img src="./imgs/phone.png" alt=""></div>
+                                    <p class="text">support@tksic.com</p>
+                                </div>
+                                <div class="item">
+                                    <div class="img"><img src="./imgs/phone.png" alt=""></div>
+                                    <p class="text">support@tksic.com</p>
+                                </div>
+                                <div class="item">
+                                    <div class="img"><img src="./imgs/phone.png" alt=""></div>
+                                    <p class="text">support@tksic.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-second">
+                        <h4 class="title">Khám Phá</h4>
+                        <ul class="list">
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="#">Về chúng tôi</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-second">
+                        <h4 class="title">Vị trí lên bản đồ</h4>
+                        <div class="img">
+                            <img src="./imgs/google_map.png" alt="">
+                        </div>
+                        <ul class="list">
+                            <li><a href="#">Tuyên bố miễn trừ trách nhiệm</a></li>
+                            <li><a href="#">Tuyên bố miễn trừ trách nhiệm</a></li>
+                            <li><a href="#">Tuyên bố miễn trừ trách nhiệm</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-nowrap">© 2021 TKSIC All right reserved</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="./imgs/mxh.png" alt="">
+                </div>
+                <div class="col-md-3">
+                    <img src="./imgs/partner.png" alt="">
+                </div>
             </div>
         </div>
     </footer>
