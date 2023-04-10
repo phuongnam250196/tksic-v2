@@ -2,7 +2,7 @@ $f1: 'Montserrat', sans-serif;
 $f2: 'Montserrat', sans-serif;
 $f3: 'Montserrat', sans-serif;
 @function rem($px) {
-  $result: $px / 16;
+  $result: calc($px / 16);
   @return $result + rem;
 }
 
@@ -13,6 +13,16 @@ $c4: #ff4b4b;
 $c5: #343a40;
 $c6: #daf1f9;
 $c-text: #a1a4ae;
+$c7: #d7f1ff;
+$c8: #00a3f9;
+$c9: #0d61ad;
+$c10: #62c0ed;
+$c11: #0092d3;
+$c12: #0072ba;
+$c13: #073965;
+$c14: #025aaa;
+$c15: #2168b1;
+$c16: #d1e9ff;
 
 body {
   font-size: rem(16);
