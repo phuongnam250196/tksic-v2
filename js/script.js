@@ -87,15 +87,15 @@ $(document).ready(function() {
         $(`.ct-chart .tab-body .tab-${id}`).show();
     });
 
-    $(".toggle-n").on("click", function() {
-        $(".main-menu").css({'transform': 'none', "box-shadow": "5px 0 12px #ddd"});
-        $(".manche").show();
-    });
+    // $(".toggle-n").on("click", function() {
+    //     $(".main-menu").css({'transform': 'none', 'width': '400px',"box-shadow": "5px 0 12px #ddd"});
+    //     $(".manche").show();
+    // });
 
-    $(".manche").on("click", function() {
-        $(".main-menu").css({'transform': 'translateX(-100%)', "box-shadow": "unset"});
-        $(".manche").hide();
-    })
+    // $(".manche").on("click", function() {
+    //     $(".main-menu").css({ 'width': '90px',"box-shadow": "unset"});
+    //     $(".manche").hide();
+    // })
 
 
     let hei = $("#header-login").outerHeight();
