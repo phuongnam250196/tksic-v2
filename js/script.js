@@ -97,6 +97,17 @@ $(document).ready(function() {
     //     $(".manche").hide();
     // })
 
+    $(".toggle-nav").on("click", function() {
+        $(this).find('i').toggleClass('toggleNav')
+        $(".main-menu").toggleClass('toggleNavMain')
+        // $(".manche").show();
+    });
+
+    $(".manche").on("click", function() {
+        $(".main-menu").css({ 'width': '90px',"box-shadow": "unset"});
+        $(".manche").hide();
+    })
+
 
     let hei = $("#header-login").outerHeight();
     if ($(window).scrollTop() > hei) {
