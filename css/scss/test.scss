@@ -1067,19 +1067,20 @@
     }
 }
 
-.footer-2 {
+#footer {
     background: #fcfcfc;
     padding: 60px 0;
+    font-family: "Roboto";
+
     .footer-first {
         .img {
 
         }
         .desc {
-            font-size: 26px;
+            font-size: rem(24);
             color: $c3;
             font-weight: 700;
-            font-family: "Roboto";
-            margin: 16px 0;
+            margin: 16px 0 8px;
         }
         .footer-box {
             border-radius: 10px;
@@ -1092,17 +1093,19 @@
                     display: flex;
                     align-items: center;
                     margin-bottom: 16px;
+                    padding-bottom: 16px;
+                    border-bottom: 1px solid $c3;
                     &:last-child {
                         margin-bottom: 0;
+                        border-bottom: unset;
                     }
                     .img {
-                        width: 40px;
+                        width: 46px;
                     }
                     .text {
                         font-size: 20px;
                         color: $c3;
                         font-weight: 400;
-                        font-family: "Roboto";
                     }
                 }
             }
@@ -1113,18 +1116,65 @@
             font-size: 29px;
             color: $c3;
             font-weight: 700;
-            font-family: "Roboto";
-            margin-bottom: 20px;
+            margin-bottom: 12px;
         }
         .list {
-            list-style: none;
             li {
-                padding: 8px 0;
+                padding: 10px 0;
                 a {
                     font-size: 20px;
                     color: $c3;
                     font-weight: 400;
-                    font-family: "Roboto";
+                    display: inline-flex;
+                    align-items: center;
+                    i {
+                        font-size: 14px;
+                        padding-right: 6px;
+                    }
+                }
+            }
+            &.v2 {
+                li {
+                    position: relative;
+                    padding-left: 16px;
+                    &::before {
+                        content: '';
+                        width: 6px;
+                        height: 6px;
+                        background-color: $c3;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-down {
+        .row {
+            align-items: flex-end;
+        }
+        .text-nowrap {
+            font-size: rem(20);
+            color: $c3;
+        }
+    
+        .mxh {
+            a {
+                margin-right: 18px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        .partner {
+            a {
+                margin-right: 2px;
+                display: inline-block;
+                &:last-child {
+                    margin-right: 0;
                 }
             }
         }
