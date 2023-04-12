@@ -13,6 +13,9 @@
   z-index: 99;
   background-color: $c7;
   font-family: "Roboto";
+  @media (max-width: 488px) {
+    height: inherit;
+  }
 
   .logo {
     margin: 0 rem(32);
@@ -257,9 +260,6 @@
           }
         }
 
-      }
-      
-      @media (max-width: 488px) {
         .search {
           .input-group {
             display: none;
@@ -269,8 +269,21 @@
             display: block;
           }
         }
+      }
+      
+      @media (max-width: 488px) {
         .login-user {
           margin: 0 12px;
+          a {
+            width: 90px;
+            font-size: 12px;
+            padding: 0 4px;
+            height: 28px;
+            border-radius: 4px;
+            img {
+              width: 13px;
+            }
+          }
         }
 
         .language {
@@ -358,6 +371,7 @@
       color: $c3;
       cursor: pointer;
       background-color: #fff;
+      display: none;
       &:hover {
         background-color: $c3;
         color: #fff;
@@ -398,9 +412,41 @@
         }
       }
     }
+    @media (max-width: 1600px) {
+      width: rem(54);
+      border-top-right-radius: rem(12);
+      .top {
+        padding-top: 16px;
+        .logo {
+          width: 24px;
+          margin-bottom: 12px;
+        }
+        .menu {
+          li {
+            margin-bottom: rem(8);
+            a {
+              padding: 12px 0;
+              img {
+                width: rem(18);
+              }
+            }
+          }
+        }
+      }
+      .bottom {
+        .logout {
+          img {
+            width: 28px;
+          }
+        }
+      }
+    }
 
     @media (max-width: 993px) {
       width: 0;
+      .fix {
+        display: flex;
+      }
       .top {
         padding-top: rem(20);
   
