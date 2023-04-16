@@ -8,7 +8,7 @@
   left: 0;
   width: 100%;
   background: #fff;
-  padding: rem(12) 0;
+  padding: 0;
   transition: padding 1s;
   z-index: 99;
   background-color: $c7;
@@ -37,6 +37,7 @@
   .nav {
     display: flex;
     justify-content: space-between;
+    height: 72px;
 
     @media (max-width: 993px) {
       justify-content: center;
@@ -46,15 +47,44 @@
       display: flex;
       align-items: center;
 
+
       .toggle-n {
         cursor: pointer;
       }
 
       .nav-menu {
+        height: 100%;
         .nav-item {
+          height: 100%;
+          position: relative;
+
+          .submenu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 720px;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 10px;
+            filter: drop-shadow(3.277px 2.294px 17.5px rgba(56,109,182,0.5));
+            .__title {
+              display: flex;
+              .sub-icon {
+                width: 46px;
+                height: 46px;
+                border-radius: 15px;
+                filter: drop-shadow(3.277px 2.294px 5px rgba(56,109,182,0.25));
+                background-color: #ffffff;
+              }
+              .sub-title {
+
+              }
+            }
+          }
+
           .nav-link {
             font-size: rem(18);
-            line-height: 40px;
+            line-height: 56px;
             color: $c3;
             font-weight: 700;
             padding-left: rem(30);

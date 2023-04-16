@@ -2780,7 +2780,7 @@ a:hover {
   left: 0;
   width: 100%;
   background: #fff;
-  padding: 0.75rem 0;
+  padding: 0;
   transition: padding 1s;
   z-index: 99;
   background-color: #d7f1ff;
@@ -2815,6 +2815,7 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 72px;
 }
 @media (max-width: 993px) {
   #header .nav {
@@ -2834,9 +2835,40 @@ a:hover {
 #header .nav .nav-left .toggle-n {
   cursor: pointer;
 }
+#header .nav .nav-left .nav-menu {
+  height: 100%;
+}
+#header .nav .nav-left .nav-menu .nav-item {
+  height: 100%;
+  position: relative;
+}
+#header .nav .nav-left .nav-menu .nav-item .submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 720px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-filter: drop-shadow(3.277px 2.294px 17.5px rgba(56, 109, 182, 0.5));
+          filter: drop-shadow(3.277px 2.294px 17.5px rgba(56, 109, 182, 0.5));
+}
+#header .nav .nav-left .nav-menu .nav-item .submenu .__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#header .nav .nav-left .nav-menu .nav-item .submenu .__title .sub-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 15px;
+  -webkit-filter: drop-shadow(3.277px 2.294px 5px rgba(56, 109, 182, 0.25));
+          filter: drop-shadow(3.277px 2.294px 5px rgba(56, 109, 182, 0.25));
+  background-color: #ffffff;
+}
 #header .nav .nav-left .nav-menu .nav-item .nav-link {
   font-size: 1.125rem;
-  line-height: 40px;
+  line-height: 56px;
   color: #005aaa;
   font-weight: 700;
   padding-left: 1.875rem;
@@ -7966,4 +7998,10 @@ a:hover {
   cursor: pointer;
   padding-left: 8px;
   color: #025aaa;
+  display: none;
+}
+@media (max-width: 993px) {
+  .toggle-icon {
+    display: block;
+  }
 }

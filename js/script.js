@@ -118,7 +118,6 @@ $(document).ready(function() {
     }
     let wCk = $(window).outerWidth();
     $(window).scroll(function() {
-        console.log('widh', wCk, $(window).scrollTop(), hei)
           let heiw = $(window).scrollTop();
           if (heiw > hei) {
             $("#header").addClass('scroll');

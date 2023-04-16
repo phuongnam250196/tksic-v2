@@ -2593,4 +2593,8 @@
     cursor:pointer;
     padding-left: 8px;
     color: $c14;
+    display: none;
+    @media (max-width: 993px) {
+        display: block;
+    }
 }
