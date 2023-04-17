@@ -394,45 +394,35 @@
         }
     }
 
-    .slick-slider {
-        margin-bottom: 0;
-    }
-
-    .slider-group {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        flex-wrap: wrap;
-
-        .slider-item {
-            margin-bottom: 20px;
-            width: 31%;
-            height: 72px;
-            @include flexbox(center, center);
+    .newspapers-row {
+        .newspapers-item {
+            margin-bottom: 32px;
         }
+        @media (max-width: 993px) {
+            padding-top: 40px;
+        }   
     }
 
-    .slick-arrow {
-        width: 48px;
-        height: 48px;
-        background-color: $c3;
+    .newspapers-nav {
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 4px;
-        color: #fff;
-
-        &.fa-chevron-left {
-            position: absolute;
-            top: calc(100% + 20px);
-            left: calc(50% - 60px);
+        margin-top: 12px;
+        a {
+            display: block;
+            width: 48px;
+            height: 48px;
+            margin: 0 12px;
         }
-
-        &.fa-chevron-right {
-            position: absolute;
-            top: calc(100% + 20px);
-            right: calc(50% - 60px);
-            ;
+        .newspapers-arrow {
+            background-color: $c3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            color: #fff;
+            width: 48px;
+            height: 48px;
         }
     }
 
@@ -1292,6 +1282,13 @@
             }
         }
     }
+
+    @media (max-width: 600px) {
+        overflow: auto;
+        .signal-table {
+            width: 600px;
+        }
+    }
 }
 
 #interest_calculator {
@@ -1373,6 +1370,25 @@
                         width: 8px;
                         height: 8px;
                         bottom: 5px;
+                    }
+                }
+            }
+        }
+        @media (max-width: 600px) {
+            .title-up {
+                .img {
+                    width: 40px;
+                }
+
+                .text {
+                    padding-left: 0;
+
+                    &::before {
+                        width: 300px;
+                    }
+
+                    &::after {
+                        left: 300px;
                     }
                 }
             }
@@ -2093,6 +2109,10 @@
                 display: none;
             }
         }
+
+        @media (max-width: 600px) {
+            padding: 20px 20px 40px;
+        }
     }
 
     .slick-slider {
@@ -2118,6 +2138,9 @@
         @media (max-width: 993px) {
             right: 0;
         }
+        @media (max-width: 600px) {
+            font-size: 13px;
+        }
     }
 
     .fa-chevron-left {
@@ -2126,6 +2149,9 @@
 
         @media (max-width: 993px) {
             left: 0;
+        }
+        @media (max-width: 600px) {
+            font-size: 13px;
         }
     }
 }
@@ -2238,6 +2264,10 @@
                 }
             }
         }
+
+        @media (max-width: 600px) {
+            padding: 20px 16px;
+        }
     }
 
     @media (max-width: 993px) {
@@ -2327,6 +2357,11 @@
                         }
                     }
                 }
+            }
+        }
+        @media (max-width: 600px) {
+            .footer-box {
+                width: 100%;
             }
         }
     }
@@ -2563,13 +2598,31 @@
     transition: 1s ease;
     box-shadow: -3px 4px 6px -4px rgba(0, 0, 0, 0.75);
     // width: 0;
-    width: 200px;
+    width: 240px;
     .nav-menu-mobile {
         flex-direction: column;
         padding-top: 12px;
         .nav-item {
             .nav-link {
                 color: $c3;
+            }
+            &:hover {
+                .submenu {
+                    visibility: visible;
+                    height: 100%;
+                }
+            }
+            .submenu {
+                visibility: hidden;
+                height: 0;
+                transition: 0.3s all ease;
+                color: $c3;
+                padding-left: 32px;
+                li {
+                    a {
+                        line-height: 1.6;
+                    }
+                }
             }
         }
     }
@@ -2578,6 +2631,7 @@
         top: 0;
         right: 0;
     }
+
 }
 
 .toggleNavRight {
