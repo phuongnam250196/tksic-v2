@@ -1,6 +1,9 @@
 .about_us {
     font-family: "Roboto";
     padding: 100px 0 120px;
+    @media (max-width: 993px) {
+        padding: 40px 0 60px;
+    }
     .box-about_us {
         height: 100%;
         display: flex;
@@ -100,6 +103,23 @@
             font-weight: 400;
             text-align: justify;
         }
+        @media (max-width: 993px) {
+            .icon-fix-top {
+                display: none;
+            }
+            .icon-fix-bottom {
+                display: none;
+            }
+            .desc {
+                margin-bottom: 32px;
+            }
+        }
+        @media (max-width: 993px) {
+            .desc {
+                width: 100%;
+                font-size: 16px;
+            }
+        }
     }
 }
 
@@ -132,9 +152,28 @@
             font-weight: 400;
             text-align: justify;
         }
+        @media (max-width: 993px) {
+            .desc {
+                width: 100%;
+                font-size: 16px;
+            }
+        }
+    }
+    @media (max-width: 993px) {
+        padding-bottom: 60px;
+        .row  {
+            flex-direction: column-reverse;
+            .box-about_us {
+                justify-content: flex-start;
+                margin-bottom: 32px;
+            }
+        }
     }
 }
 
 #mission  {
     padding: 0 0 40px;
+    @media (max-width: 993px) {
+        padding: 0;
+    }
 }

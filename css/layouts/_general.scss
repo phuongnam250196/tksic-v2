@@ -174,3 +174,33 @@ a {
 .c-close {
   color: #ff0000;
 }
+
+.pagination-custom {
+  .page-item {
+    &:first-child {
+      .page-link {
+        border: none;
+        margin: 0;
+      }
+    }
+    &:last-child {
+      .page-link {
+        border: none;
+        margin: 0;
+      }
+    }
+    .page-link {
+      width: 36px;
+      height: 35px;
+      border-radius: 4px;
+      margin: 0 8px;
+      color: #005aaa;
+    }
+    &.active {
+      .page-link {
+        background-color: #005aaa;
+        color: #fff;
+      }
+    }
+  }
+}
