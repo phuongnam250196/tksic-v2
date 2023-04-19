@@ -28,9 +28,35 @@
       }
 
       .img {
-          text-align: center;
-          padding: rem(30) 0 rem(40);
-      }
+        display: flex;
+        justify-content: center;
+        padding: rem(30) 0 rem(40);
+
+        .left {
+            img {
+                width: 92px;
+            }
+        }
+
+        .right {
+            padding-left: 12px;
+
+            a {
+                display: block;
+                width: 135px;
+                padding: 2px 0;
+                margin-bottom: 4px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
 
       .investment-form {
           text-align: center;
@@ -393,6 +419,41 @@
           }
       }
   }
+
+  .slick-slider {
+    margin-bottom: 0;
+}
+
+.slider-item {
+    margin-bottom: 40px;
+    img {
+        margin: 0 auto;
+    }
+}
+
+.slick-arrow {
+    width: 48px;
+    height: 48px;
+    background-color: $c3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: #fff;
+
+    &.fa-chevron-left {
+        position: absolute;
+        top: calc(100% + 20px);
+        left: calc(50% - 60px);
+    }
+
+    &.fa-chevron-right {
+        position: absolute;
+        top: calc(100% + 20px);
+        right: calc(50% - 60px);
+        ;
+    }
+}
 
   .newspapers-row {
       .newspapers-item {

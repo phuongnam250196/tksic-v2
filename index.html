@@ -182,9 +182,15 @@
                                 THÔNG MINH</h4>
                             <p class="text">Download The App TKSIC 2.0</p>
                             <div class="img">
-                                <img src="./imgs/qr_code.png" alt="">
-                                <img src="./imgs/download_app.png" alt="">
+                                <div class="left">
+                                    <img src="./imgs/qr_code.png" alt="">
+                                </div>
+                                <div class="right">
+                                    <a href="#"><img src="./imgs/download_app_google.png" alt=""></a>
+                                    <a href="#"><img src="./imgs/download_app_google.png" alt=""></a>
+                                </div>
                             </div>
+                            
                             <form action="" class="investment-form">
                                 <input type="text" placeholder="E-mail/Phone" class="investment-form-input">
                                 <button class="btn">Try MyTKSIC</button>
@@ -267,56 +273,88 @@
                         </div>
                     </div>
                     <div class="col-lg-7">
-                        <div class="row newspapers-row">
-                            <div class="col-6 col-lg-4">
-                                <div class="newspapers-item">
-                                    <img src="./imgs/ico-1.png" alt="">
-                                </div>
+                        <div id="carousel3" class="slider">
+                            <div class="slider-item">
+                                <img src="./imgs/ico-1.png" alt="">
                             </div>
-                            <div class="col-6 col-lg-4">
-                                <div class="newspapers-item">
-                                    <img src="./imgs/ico-2.png" alt="">
-                                </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-2.png" alt="">
                             </div>
-                            <div class="col-6 col-lg-4">
-                                <div class="newspapers-item">
-                                    <img src="./imgs/ico-3.png" alt="">
-                                </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-3.png" alt="">
                             </div>
-                            <div class="col-6 col-lg-4">
-                                <div class="newspapers-item">
-                                    <img src="./imgs/ico-4.png" alt="">
-                                </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-4.png" alt="">
                             </div>
-                            <div class="col-6 col-lg-4">
-                                <div class="newspapers-item">
-                                    <img src="./imgs/ico-5.png" alt="">
-                                </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-5.png" alt="">
                             </div>
-                            <div class="col-6 col-lg-4">
-                                <div class="newspapers-item">
-                                    <img src="./imgs/ico-6.png" alt="">
-                                </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-6.png" alt="">
                             </div>
-                            <div class="col-6 col-lg-4">
-                                <div class="newspapers-item">
-                                    <img src="./imgs/ico-7.png" alt="">
-                                </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-7.png" alt="">
                             </div>
-                            <div class="col-6 col-lg-4">
-                                <div class="newspapers-item">
-                                    <img src="./imgs/ico-8.png" alt="">
-                                </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-8.png" alt="">
                             </div>
-                            <div class="col-6 col-lg-4">
-                                <div class="newspapers-item">
-                                    <img src="./imgs/ico-9.png" alt="">
-                                </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-9.png" alt="">
                             </div>
-                        </div>
-                        <div class="newspapers-nav">
-                            <a href="#"><i class="fas fa-chevron-left newspapers-arrow" style=""></i></a>
-                            <a href="#"><i class="fas fa-chevron-right newspapers-arrow" style=""></i></a>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-1.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-2.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-3.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-4.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-5.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-6.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-7.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-8.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-9.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-1.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-2.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-3.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-4.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-5.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-6.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-7.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-8.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="./imgs/ico-9.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1293,7 +1331,9 @@
                 ]
             });
             $('#carousel3').slick({
-                slidesToShow: 1,
+                rows: 3,
+                slidesToShow: 3,
+                slidesToShow: 3,
                 easing: 'swing', // see http://api.jquery.com/animate/
                 speed: 700,
                 dots: false,
