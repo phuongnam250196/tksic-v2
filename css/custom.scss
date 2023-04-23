@@ -675,6 +675,10 @@ $cl-btn: #36a7d6;
 				}
 			}
 		}
+		@media (max-width: 600px) {
+			padding: rem(20);
+		}
+			
 	}
 
 
