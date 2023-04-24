@@ -673,6 +673,14 @@ $cl-btn: #36a7d6;
 					background-color: $c14;
 					color: #fff;
 				}
+				@media (max-width: 600px) {
+					.btn {
+						font-size: 14px;
+						width: 140px;
+						height: 34px;
+						border-radius: 8px;
+					}
+				}
 			}
 		}
 		@media (max-width: 600px) {

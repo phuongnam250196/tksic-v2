@@ -132,9 +132,52 @@
 
     @media (max-width: 480px) {
         .investment-box {
+            .desc {
+                font-size: 14px;
+            }
+            .title {
+                font-size: 18px;
+                padding: 8px 0 12px;
+            }
+            .text {
+                font-size: 14px;
+            }
+            .img {
+                padding: 12px 0 20px;
+                .left {
+                    width: 70px;
+                }
+                .right {
+                    a {
+                        width: 100px;
+                    }
+                }
+            }
             .investment-form {
                 .investment-form-input {
-                    width: 220px;
+                    width: 180px;
+                    height: 30px;
+                    border-radius: 4px;
+                    font-size: 12px;
+                    margin-right: 8px;
+                }
+                .btn {
+                    width: 112px;
+                    border-radius: 4px;
+                    height: 30px;
+                    font-size: 12px;
+                }
+            }
+            .or {
+                font-size: 12px;
+                padding: 16px 0 12px;
+            }
+            .other {
+                a {
+                    padding: 0 4px;
+                    img {
+                        width: 100px;
+                    }
                 }
             }
         }
@@ -221,6 +264,29 @@
                         line-height: 1.1;
                     }
                 }
+
+                @media (max-width: 480px) {
+                    margin-bottom: 16px;
+                    .left {
+                        width: 40px;
+                        img {
+                            width: 80%;
+                        }
+                    }
+    
+                    .right {
+                        padding-left: 10px;
+    
+                        .title {
+                            font-size: 16px;
+                            margin-bottom: 4px;
+                        }
+    
+                        .desc {
+                            font-size: 14px;
+                        }
+                    }
+                }
             }
         }
 
@@ -231,6 +297,11 @@
 
             .list {
                 margin-top: 40px;
+            }
+        }
+        @media (max-width: 480px) {
+            .list {
+                margin-top: 20px;
             }
         }
     }
@@ -336,6 +407,28 @@
                         line-height: 1.1;
                     }
                 }
+                @media (max-width: 480px) {
+                    margin-bottom: 16px;
+                    .left {
+                        width: 40px;
+                        img {
+                            width: 80%;
+                        }
+                    }
+    
+                    .right {
+                        padding-left: 10px;
+    
+                        .title {
+                            font-size: 16px;
+                            margin-bottom: 4px;
+                        }
+    
+                        .desc {
+                            font-size: 14px;
+                        }
+                    }
+                }
             }
         }
 
@@ -346,6 +439,11 @@
 
             .list {
                 margin-top: 40px;
+            }
+        }
+        @media (max-width: 480px) {
+            .list {
+                margin-top: 20px;
             }
         }
     }
@@ -416,6 +514,12 @@
         @media (max-width: 1600px) {
             .title {
                 font-size: rem(20);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .desc {
+                font-size: 14px;
             }
         }
     }
@@ -539,6 +643,20 @@
 
     @media (max-width: 481px) {
         padding: 20px;
+        .slick-arrow {
+            width: 30px;
+            height: 30px;
+            font-size: 12px;
+            &.fa-chevron-left {
+                top: calc(100% - 10px);
+                left: calc(50% - 36px);
+            }
+
+            &.fa-chevron-right {
+                top: calc(100% - 10px);
+                right: calc(50% - 36px);
+            }
+        }
     }
 }
 
@@ -1276,6 +1394,15 @@
             border-radius: 6px;
         }
     }
+    @media (max-width: 480px) {
+        padding-top: 8px;
+        .link {
+            font-size: 12px;
+            width: 100px;
+            height: 34px;
+            border-radius: 4px;
+        }
+    }
 }
 
 #signal {
@@ -1382,8 +1509,46 @@
     @media (max-width: 600px) {
 
         //   overflow: auto;
+        .table-responsive {
+            margin-bottom: 20px;
+        }
         .signal-table {
             width: 600px;
+            tr {
+                td {
+                    height: 34px;
+                    padding: 8px 13px;
+
+                    &.first {
+                        font-size: 24px !important;
+                    }
+                    &.two {
+                        font-size: 14px;
+                    }
+
+                    &.three {
+                        font-size: 14px;
+                    }
+
+                    &.four {
+                        font-size: 14px;
+                    }
+
+                    &.five {
+                        font-size: 14px;
+                    }
+
+                    img {
+                        width: 10px;
+                    }
+                }
+
+                &:first-child {
+                    td {
+                        font-size: 16px;
+                    }
+                }
+            }
         }
     }
 }
@@ -1479,6 +1644,7 @@
 
         @media (max-width: 600px) {
             .title-up {
+                margin-bottom: 20px;
                 .img {
                     width: 40px;
                 }
@@ -1494,6 +1660,9 @@
                         left: 300px;
                     }
                 }
+            }
+            .title-down {
+                font-size: 14px;
             }
         }
     }
@@ -1587,12 +1756,18 @@
                 }
             }
         }
+        @media (max-width: 600px) {
+            padding: 20px 0 0;
+        }
     }
 }
 
 #news {
     font-family: "Roboto";
     margin-bottom: 60px;
+    @media (max-width: 600px) {
+        margin-bottom: 0;
+    }
 
     .group-title {
         .title-up {
@@ -1662,6 +1837,27 @@
                         width: 8px;
                         height: 8px;
                         bottom: 5px;
+                    }
+                }
+            }
+        }
+        @media (max-width: 600px) {
+            .title-up {
+                margin-bottom: 0;
+                .img {
+                    width: 40px;
+                }
+
+                .text {
+                    padding-left: 0;
+                    padding-bottom: 13px;
+
+                    &::before {
+                        width: 162px;
+                    }
+
+                    &::after {
+                        left: 162px;
                     }
                 }
             }
@@ -1850,25 +2046,20 @@
         @media (max-width: 600px) {
             .title-up {
                 .img {
-                    width: 50px;
-
-                    img {
-                        width: 100%;
-                    }
+                    width: 36px;
                 }
 
                 .text {
                     font-size: rem(20);
+                    padding-bottom: 13px;
+                    padding-left: 0;
 
                     &::before {
-                        width: 220px;
+                        width: 200px;
                     }
 
                     &::after {
-                        left: 220px;
-                        width: 8px;
-                        height: 8px;
-                        bottom: 5px;
+                        left: 200px;
                     }
                 }
             }
@@ -2020,7 +2211,7 @@
 
                     .determine-child__box-btn {
                         .btn-custom {
-                            width: 61px;
+                            width: 54px;
                             height: 27px;
                             border-radius: 6px;
                             font-size: 13px;
@@ -2174,10 +2365,10 @@
             }
 
             .btn-contact {
-                font-size: 14px;
-                width: 132px;
-                height: 40px;
-                border-radius: 6px;
+                font-size: 12px;
+                width: 112px;
+                height: 36px;
+                border-radius: 4px;
             }
         }
     }
@@ -2191,6 +2382,7 @@
 
     @media (max-width: 480px) {
         padding: 20px;
+        margin-bottom: 20px;
     }
 }
 
@@ -2199,6 +2391,10 @@
     font-family: "Roboto";
     padding: 20px 0;
     margin-bottom: 72px;
+
+    @media (max-width: 600px) {
+        margin-bottom: 30px;
+    }
 
     .capital_mangement-title {
         position: relative;
@@ -2295,6 +2491,11 @@
 
             img {
                 width: 80%;
+            }
+        }
+        @media (max-width: 600px) {
+            .slider-item {
+                height: 80px;
             }
         }
     }

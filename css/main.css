@@ -3686,8 +3686,47 @@ a:hover {
   }
 }
 @media (max-width: 480px) {
+  #investment .investment-box .desc {
+    font-size: 14px;
+  }
+  #investment .investment-box .title {
+    font-size: 18px;
+    padding: 8px 0 12px;
+  }
+  #investment .investment-box .text {
+    font-size: 14px;
+  }
+  #investment .investment-box .img {
+    padding: 12px 0 20px;
+  }
+  #investment .investment-box .img .left {
+    width: 70px;
+  }
+  #investment .investment-box .img .right a {
+    width: 100px;
+  }
   #investment .investment-box .investment-form .investment-form-input {
-    width: 220px;
+    width: 180px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-right: 8px;
+  }
+  #investment .investment-box .investment-form .btn {
+    width: 112px;
+    border-radius: 4px;
+    height: 30px;
+    font-size: 12px;
+  }
+  #investment .investment-box .or {
+    font-size: 12px;
+    padding: 16px 0 12px;
+  }
+  #investment .investment-box .other a {
+    padding: 0 4px;
+  }
+  #investment .investment-box .other a img {
+    width: 100px;
   }
 }
 
@@ -3766,12 +3805,38 @@ a:hover {
   font-weight: 400;
   line-height: 1.1;
 }
+@media (max-width: 480px) {
+  #reason .reason-box .list .item {
+    margin-bottom: 16px;
+  }
+  #reason .reason-box .list .item .left {
+    width: 40px;
+  }
+  #reason .reason-box .list .item .left img {
+    width: 80%;
+  }
+  #reason .reason-box .list .item .right {
+    padding-left: 10px;
+  }
+  #reason .reason-box .list .item .right .title {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  #reason .reason-box .list .item .right .desc {
+    font-size: 14px;
+  }
+}
 @media (max-width: 1600px) {
   #reason .reason-box .title-main {
     font-size: 1.25rem;
   }
   #reason .reason-box .list {
     margin-top: 40px;
+  }
+}
+@media (max-width: 480px) {
+  #reason .reason-box .list {
+    margin-top: 20px;
   }
 }
 @media (max-width: 993px) {
@@ -3867,12 +3932,38 @@ a:hover {
   font-weight: 400;
   line-height: 1.1;
 }
+@media (max-width: 480px) {
+  #investor_training .investor_training-box .list .item {
+    margin-bottom: 16px;
+  }
+  #investor_training .investor_training-box .list .item .left {
+    width: 40px;
+  }
+  #investor_training .investor_training-box .list .item .left img {
+    width: 80%;
+  }
+  #investor_training .investor_training-box .list .item .right {
+    padding-left: 10px;
+  }
+  #investor_training .investor_training-box .list .item .right .title {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  #investor_training .investor_training-box .list .item .right .desc {
+    font-size: 14px;
+  }
+}
 @media (max-width: 1600px) {
   #investor_training .investor_training-box .title-main {
     font-size: 1.25rem;
   }
   #investor_training .investor_training-box .list {
     margin-top: 40px;
+  }
+}
+@media (max-width: 480px) {
+  #investor_training .investor_training-box .list {
+    margin-top: 20px;
   }
 }
 #investor_training .investor_training_img {
@@ -3935,6 +4026,11 @@ a:hover {
 @media (max-width: 1600px) {
   #newspapers .newspapers-box .title {
     font-size: 1.25rem;
+  }
+}
+@media (max-width: 480px) {
+  #newspapers .newspapers-box .desc {
+    font-size: 14px;
   }
 }
 #newspapers .slick-slider {
@@ -4052,6 +4148,19 @@ a:hover {
 @media (max-width: 481px) {
   #newspapers {
     padding: 20px;
+  }
+  #newspapers .slick-arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+  #newspapers .slick-arrow.fa-chevron-left {
+    top: calc(100% - 10px);
+    left: calc(50% - 36px);
+  }
+  #newspapers .slick-arrow.fa-chevron-right {
+    top: calc(100% - 10px);
+    right: calc(50% - 36px);
   }
 }
 
@@ -4778,6 +4887,17 @@ a:hover {
     border-radius: 6px;
   }
 }
+@media (max-width: 480px) {
+  .load_more {
+    padding-top: 8px;
+  }
+  .load_more .link {
+    font-size: 12px;
+    width: 100px;
+    height: 34px;
+    border-radius: 4px;
+  }
+}
 
 #signal {
   font-family: "Roboto";
@@ -4857,8 +4977,36 @@ a:hover {
   }
 }
 @media (max-width: 600px) {
+  #signal .table-responsive {
+    margin-bottom: 20px;
+  }
   #signal .signal-table {
     width: 600px;
+  }
+  #signal .signal-table tr td {
+    height: 34px;
+    padding: 8px 13px;
+  }
+  #signal .signal-table tr td.first {
+    font-size: 24px !important;
+  }
+  #signal .signal-table tr td.two {
+    font-size: 14px;
+  }
+  #signal .signal-table tr td.three {
+    font-size: 14px;
+  }
+  #signal .signal-table tr td.four {
+    font-size: 14px;
+  }
+  #signal .signal-table tr td.five {
+    font-size: 14px;
+  }
+  #signal .signal-table tr td img {
+    width: 10px;
+  }
+  #signal .signal-table tr:first-child td {
+    font-size: 16px;
   }
 }
 
@@ -4942,6 +5090,9 @@ a:hover {
   }
 }
 @media (max-width: 600px) {
+  #identify .group-title .title-up, #identify_page .group-title .title-up, #knowledge .group-title .title-up, #identify_page_detail .group-title .title-up {
+    margin-bottom: 20px;
+  }
   #identify .group-title .title-up .img, #identify_page .group-title .title-up .img, #knowledge .group-title .title-up .img, #identify_page_detail .group-title .title-up .img {
     width: 40px;
   }
@@ -4953,6 +5104,9 @@ a:hover {
   }
   #identify .group-title .title-up .text::after, #identify_page .group-title .title-up .text::after, #knowledge .group-title .title-up .text::after, #identify_page_detail .group-title .title-up .text::after {
     left: 300px;
+  }
+  #identify .group-title .title-down, #identify_page .group-title .title-down, #knowledge .group-title .title-down, #identify_page_detail .group-title .title-down {
+    font-size: 14px;
   }
 }
 #identify .ct .main, #identify_page .ct .main, #knowledge .ct .main, #identify_page_detail .ct .main {
@@ -5021,10 +5175,20 @@ a:hover {
     font-size: 14px;
   }
 }
+@media (max-width: 600px) {
+  #identify .ct, #identify_page .ct, #knowledge .ct, #identify_page_detail .ct {
+    padding: 20px 0 0;
+  }
+}
 
 #news {
   font-family: "Roboto";
   margin-bottom: 60px;
+}
+@media (max-width: 600px) {
+  #news {
+    margin-bottom: 0;
+  }
 }
 #news .group-title .title-up {
   display: -webkit-box;
@@ -5086,6 +5250,24 @@ a:hover {
     width: 8px;
     height: 8px;
     bottom: 5px;
+  }
+}
+@media (max-width: 600px) {
+  #news .group-title .title-up {
+    margin-bottom: 0;
+  }
+  #news .group-title .title-up .img {
+    width: 40px;
+  }
+  #news .group-title .title-up .text {
+    padding-left: 0;
+    padding-bottom: 13px;
+  }
+  #news .group-title .title-up .text::before {
+    width: 162px;
+  }
+  #news .group-title .title-up .text::after {
+    left: 162px;
   }
 }
 #news .slider .slick-list .slick-slide {
@@ -5264,22 +5446,18 @@ a:hover {
 }
 @media (max-width: 600px) {
   #determine .group-title .title-up .img {
-    width: 50px;
-  }
-  #determine .group-title .title-up .img img {
-    width: 100%;
+    width: 36px;
   }
   #determine .group-title .title-up .text {
     font-size: 1.25rem;
+    padding-bottom: 13px;
+    padding-left: 0;
   }
   #determine .group-title .title-up .text::before {
-    width: 220px;
+    width: 200px;
   }
   #determine .group-title .title-up .text::after {
-    left: 220px;
-    width: 8px;
-    height: 8px;
-    bottom: 5px;
+    left: 200px;
   }
 }
 #determine .determine-box {
@@ -5411,7 +5589,7 @@ a:hover {
     padding: 23px 0 25px;
   }
   #determine .determine-box .determine-child .determine-child__box .determine-child__box-btn .btn-custom {
-    width: 61px;
+    width: 54px;
     height: 27px;
     border-radius: 6px;
     font-size: 13px;
@@ -5541,10 +5719,10 @@ a:hover {
     width: 100%;
   }
   #contact .contact-form .btn-contact {
-    font-size: 14px;
-    width: 132px;
-    height: 40px;
-    border-radius: 6px;
+    font-size: 12px;
+    width: 112px;
+    height: 36px;
+    border-radius: 4px;
   }
 }
 @media (max-width: 993px) {
@@ -5556,6 +5734,7 @@ a:hover {
 @media (max-width: 480px) {
   #contact {
     padding: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -5564,6 +5743,11 @@ a:hover {
   font-family: "Roboto";
   padding: 20px 0;
   margin-bottom: 72px;
+}
+@media (max-width: 600px) {
+  #capital_mangement {
+    margin-bottom: 30px;
+  }
 }
 #capital_mangement .capital_mangement-title {
   position: relative;
@@ -5649,6 +5833,11 @@ a:hover {
 }
 #capital_mangement .slick-list .slider-item img {
   width: 80%;
+}
+@media (max-width: 600px) {
+  #capital_mangement .slick-list .slider-item {
+    height: 80px;
+  }
 }
 #capital_mangement .fa-chevron-right {
   z-index: 9;
@@ -8335,6 +8524,152 @@ a:hover {
   font-family: "Roboto";
   padding-bottom: 100px;
 }
+#economic_calendar .economic_calendar__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+#economic_calendar .economic_calendar__time .avatars {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: auto;
+}
+#economic_calendar .economic_calendar__time .avatars .avatars__item {
+  border: 2px solid #fff;
+}
+#economic_calendar .economic_calendar__time .avatars .avatars__item .avatars__image {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#economic_calendar .economic_calendar__time .avatars .avatars__item:nth-child(2) {
+  margin-left: -12px;
+}
+#economic_calendar .economic_calendar__time .avatars .avatars__item:nth-child(3) {
+  margin-left: -12px;
+}
+#economic_calendar .economic_calendar__time .avatars .avatars__item:nth-child(4) {
+  margin-left: -12px;
+  font-size: 12px;
+}
+#economic_calendar .economic_calendar__time .other {
+  margin-left: 20px;
+}
+#economic_calendar .economic_calendar__time .other .__first {
+  color: #1956ff;
+  border-radius: 6px;
+  padding: 10px 16px;
+  background-color: #e3effd;
+  display: inline-block;
+}
+#economic_calendar .economic_calendar__time .other .__first i {
+  color: #1956ff;
+}
+#economic_calendar .economic_calendar__time .other .nav {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-left: 1px solid #ddd;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+#economic_calendar .economic_calendar__time .other .nav .nav-item .nav-link.active, #economic_calendar .economic_calendar__time .other .nav .nav-item .around.calculator .box .box-calc .box-calc-l .item.v2 .list .nav-link.child:hover, .around.calculator .box .box-calc .box-calc-l .item.v2 .list #economic_calendar .economic_calendar__time .other .nav .nav-item .nav-link.child:hover {
+  color: #1956ff;
+  border-radius: 6px;
+  padding: 10px 16px;
+  background-color: #e3effd;
+}
+#economic_calendar .economic_calendar_table .table {
+  font-size: 14px;
+}
+#economic_calendar .economic_calendar_table .table tr td {
+  vertical-align: middle;
+  padding: 8px 12px;
+}
+#economic_calendar .economic_calendar_table .table tr td:nth-child(1) {
+  width: 80px;
+}
+#economic_calendar .economic_calendar_table .table tr td:nth-child(2) {
+  width: 160px;
+}
+#economic_calendar .economic_calendar_table .table tr td:nth-child(3) {
+  width: 400px;
+}
+#economic_calendar .economic_calendar_table .table tr td:nth-child(4) {
+  width: 300px;
+}
+#economic_calendar .economic_calendar_table .table tr td:nth-child(5) {
+  width: 230px;
+}
+#economic_calendar .economic_calendar_table .table tr td:nth-child(6) {
+  width: auto;
+}
+#economic_calendar .economic_calendar_table .table .tbl_1 {
+  background-color: red;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #fff;
+}
+#economic_calendar .economic_calendar_table .table .tbl_2 img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+#economic_calendar .economic_calendar_table .table .tbl_3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#economic_calendar .economic_calendar_table .table .tbl_3 i {
+  padding-right: 20px;
+  color: #055ba9;
+}
+#economic_calendar .economic_calendar_table .table .tbl_3 .dropdown-toggle {
+  color: inherit;
+  text-decoration: none;
+}
+#economic_calendar .economic_calendar_table .table .tbl_4 p {
+  line-height: 1.1;
+}
+#economic_calendar .economic_calendar_table .table .tbl_4 p:last-child {
+  color: red;
+}
+#economic_calendar .economic_calendar_table .table .tbl_5 p {
+  line-height: 1.1;
+}
+#economic_calendar .economic_calendar_table .table .tbl_5 p:last-child {
+  font-weight: bold;
+}
+#economic_calendar .economic_calendar_table .table .tbl_6 p {
+  line-height: 1.1;
+}
+#economic_calendar .economic_calendar_table .table .tbl_6 p:last-child {
+  font-weight: bold;
+}
+#economic_calendar .economic_calendar_table .table .tbl_date {
+  color: #333;
+  font-weight: bold;
+  padding: 12px;
+  background-color: #d7f1ff;
+}
 
 .table-responsive {
   overflow: auto;
@@ -9026,6 +9361,14 @@ a:hover {
 .around.calculator .box .form-btn .btn {
   background-color: #025aaa;
   color: #fff;
+}
+@media (max-width: 600px) {
+  .around.calculator .box .form-btn .btn {
+    font-size: 14px;
+    width: 140px;
+    height: 34px;
+    border-radius: 8px;
+  }
 }
 @media (max-width: 600px) {
   .around.calculator {
