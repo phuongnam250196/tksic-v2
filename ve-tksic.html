@@ -20,6 +20,7 @@
         <div class="logo">
             <a href="#"><img src="./imgs/logo.png" height="52" width="127"></a>
         </div>
+        <span class="toggle-icon toggle-n">&#9776;</span>
         <div class="container container-c">
             <div class="nav">
                 <div class="nav-left">
@@ -166,7 +167,6 @@
                     <div class="language">
                         <img src="./imgs/language.png" height="29" width="29" alt="">
                     </div>
-                    <span class="toggle-icon" id="openSidenav">&#9776;</span>
                 </div>
             </div>
         </div>
@@ -417,59 +417,69 @@
 
     <!-- menu left -->
     <div id="menu">
-        <nav class="main-menu">
+        <nav class="main-menu menu-cols">
             <div class="top">
                 <a class="logo" >
                     <img src="imgs/toggle.png" class="toggle-n" alt="">
                 </a>
                 <ul class="menu">
-                    <li>
-                        <a href="" class="active">
+                    <li class="active">
+                        <div class="title">
                             <img src="./imgs/i-1.png" alt="" class="ic">
                             <span>Thông tin cá nhân</span>
-                        </a>
+                            <i class="fas fa-sort-down"></i>
+                        </div>
+                        <ul class="sub-menu">
+                            <li><a href="#">Tổng quan thị trường</a></li>
+                            <li><a href="#">Biểu đồ</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="">
+                        <div class="title">
                             <img src="./imgs/i-2.png" alt="" class="ic">
-                            <span>Định danh tài khoản</span>
-                        </a>
+                            <span>Thông tin cá nhân</span>
+                            <i class="fas fa-sort-down"></i>
+                        </div>
+                        <ul class="sub-menu">
+                            <li><a href="#">Tổng quan thị trường</a></li>
+                            <li><a href="#">Biểu đồ</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="">
+                        <div class="title">
                             <img src="./imgs/i-3.png" alt="" class="ic">
-                            <span>Danh mục đầu tư</span>
-                        </a>
+                            <span><a href="#">Danh mục đầu tư</a></span>
+                        </div>
                     </li>
                     <li>
-                        <a href="">
+                        <div class="title">
                             <img src="./imgs/i-4.png" alt="" class="ic">
-                            <span>Nộp tiền vào tài khoản</span>
-                        </a>
+                            <span><a href="#">Nộp tiền vào tài khoản</a></span>
+                        </div>
                     </li>
                     <li>
-                        <a href="">
+                        <div class="title">
                             <img src="./imgs/i-5.png" alt="" class="ic">
-                            <span>Rút tiền về tài khoản</span>
-                        </a>
+                            <span><a href="#">Rút tiền về tài khoản</a></span>
+                        </div>
                     </li>
                     <li>
-                        <a href="">
+                        <div class="title">
                             <img src="./imgs/i-6.png" alt="" class="ic">
-                            <span>Dành cho cộng tác viên</span>
-                        </a>
+                            <span><a href="#">Dành cho cộng tác viên</a></span>
+                        </div>
                     </li>
                     <li>
-                        <a href="">
+                        <div class="title">
                             <img src="./imgs/i-7.png" alt="" class="ic">
-                            <span>Hỗ trợ khách hàng</span>
-                        </a>
+                            <span><a href="#">Hỗ trợ khách hàng</a></span>
+                        </div>
                     </li>
                     <li>
-                        <a href="">
+                        <div class="title">
                             <img src="./imgs/i-8.png" alt="" class="ic">
-                            <span>Câu hỏi thường gặp</span>
-                        </a>
+                            <span><a href="#">Câu hỏi thường gặp</a></span>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -478,35 +488,8 @@
                     <img src="./imgs/i-back.png" alt="">
                 </a>
             </div>
-            <div class="fix toggle-nav">
-                <i class="fal fa-arrow-alt-from-left"></i>
-            </div>
         </nav>
         <div class="manche"></div>
-    </div>
-
-    <!-- menu right -->
-    <div id="mySidenav" class="sidenav">
-        <ul class="nav nav-menu-mobile">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Trang chủ</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Về TKSIC</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Sản Phẩm</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Dịch Vụ</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Tin Tức</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Hỗ Trợ</a>
-            </li>
-        </ul>
     </div>
 
     <!-- Icon share -->

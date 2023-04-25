@@ -7977,11 +7977,16 @@ a:hover {
   }
 }
 
-#announcement {
+#announcement, #recruitment {
   font-family: "Roboto";
   padding: 60px 0;
 }
-#announcement .group-title .title-up {
+@media (max-width: 600px) {
+  #announcement, #recruitment {
+    padding: 40px 0;
+  }
+}
+#announcement .group-title .title-up, #recruitment .group-title .title-up {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7990,10 +7995,10 @@ a:hover {
           align-items: flex-end;
   margin-bottom: 36px;
 }
-#announcement .group-title .title-up.only-icon {
+#announcement .group-title .title-up.only-icon, #recruitment .group-title .title-up.only-icon {
   padding-left: 60px;
 }
-#announcement .group-title .title-up .text {
+#announcement .group-title .title-up .text, #recruitment .group-title .title-up .text {
   margin-left: 12px;
   position: relative;
   font-size: 29px;
@@ -8003,7 +8008,7 @@ a:hover {
   padding-left: 8px;
   text-transform: uppercase;
 }
-#announcement .group-title .title-up .text::before {
+#announcement .group-title .title-up .text::before, #recruitment .group-title .title-up .text::before {
   content: "";
   position: absolute;
   bottom: 8px;
@@ -8012,7 +8017,7 @@ a:hover {
   height: 2px;
   background-color: #005aaa;
 }
-#announcement .group-title .title-up .text::after {
+#announcement .group-title .title-up .text::after, #recruitment .group-title .title-up .text::after {
   content: "";
   position: absolute;
   bottom: 3px;
@@ -8023,29 +8028,29 @@ a:hover {
   background-color: #005aaa;
 }
 @media (max-width: 1600px) {
-  #announcement .group-title .title-up .img {
+  #announcement .group-title .title-up .img, #recruitment .group-title .title-up .img {
     width: 50px;
   }
-  #announcement .group-title .title-up .img img {
+  #announcement .group-title .title-up .img img, #recruitment .group-title .title-up .img img {
     width: 100%;
   }
-  #announcement .group-title .title-up .text {
+  #announcement .group-title .title-up .text, #recruitment .group-title .title-up .text {
     font-size: 1.25rem;
   }
-  #announcement .group-title .title-up .text::before {
-    width: 220px;
+  #announcement .group-title .title-up .text::before, #recruitment .group-title .title-up .text::before {
+    width: 270px;
   }
-  #announcement .group-title .title-up .text::after {
-    left: 220px;
+  #announcement .group-title .title-up .text::after, #recruitment .group-title .title-up .text::after {
+    left: 270px;
     width: 8px;
     height: 8px;
     bottom: 5px;
   }
 }
-#announcement .announcement-list {
+#announcement .announcement-list, #recruitment .announcement-list {
   margin-bottom: 40px;
 }
-#announcement .announcement-list .media {
+#announcement .announcement-list .media, #recruitment .announcement-list .media {
   height: 157px;
   border-radius: 10px;
   -webkit-filter: drop-shadow(0px 4px 17.5px rgba(56, 109, 182, 0.5));
@@ -8054,7 +8059,7 @@ a:hover {
   padding: 20px;
   margin-bottom: 30px;
 }
-#announcement .announcement-list .media .media-image {
+#announcement .announcement-list .media .media-image, #recruitment .announcement-list .media .media-image {
   width: 103px;
   height: 103px;
   border-radius: 15px;
@@ -8073,20 +8078,20 @@ a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-#announcement .announcement-list .media .media-image span {
+#announcement .announcement-list .media .media-image span, #recruitment .announcement-list .media .media-image span {
   font-size: 40px;
   color: #055ba9;
   font-weight: 700;
   line-height: 1;
 }
-#announcement .announcement-list .media .media-image span:last-child {
+#announcement .announcement-list .media .media-image span:last-child, #recruitment .announcement-list .media .media-image span:last-child {
   padding-top: 4px;
   font-size: 18px;
 }
-#announcement .announcement-list .media .media-body {
+#announcement .announcement-list .media .media-body, #recruitment .announcement-list .media .media-body {
   padding-left: 24px;
 }
-#announcement .announcement-list .media .media-body .media-title {
+#announcement .announcement-list .media .media-body .media-title, #recruitment .announcement-list .media .media-body .media-title {
   font-size: 20px;
   line-height: 25px;
   color: #055ba9;
@@ -8096,9 +8101,128 @@ a:hover {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+@media (max-width: 1600px) {
+  #announcement .announcement-list .media, #recruitment .announcement-list .media {
+    height: 132px;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 30px;
+  }
+  #announcement .announcement-list .media .media-image, #recruitment .announcement-list .media .media-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  #announcement .announcement-list .media .media-image span, #recruitment .announcement-list .media .media-image span {
+    font-size: 32px;
+  }
+  #announcement .announcement-list .media .media-image span:last-child, #recruitment .announcement-list .media .media-image span:last-child {
+    padding-top: 4px;
+    font-size: 16px;
+  }
+  #announcement .announcement-list .media .media-body, #recruitment .announcement-list .media .media-body {
+    padding-left: 20px;
+  }
+  #announcement .announcement-list .media .media-body .media-title, #recruitment .announcement-list .media .media-body .media-title {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
 
 .bg-none {
   background: unset !important;
+}
+
+#recruitment {
+  font-family: "Roboto";
+}
+#recruitment .group-title .title-up .text::before {
+  width: 200px;
+}
+#recruitment .group-title .title-up .text::after {
+  left: 200px;
+}
+@media (max-width: 1600px) {
+  #recruitment .group-title .title-up .img {
+    width: 50px;
+  }
+  #recruitment .group-title .title-up .img img {
+    width: 100%;
+  }
+  #recruitment .group-title .title-up .text {
+    font-size: 1.25rem;
+  }
+  #recruitment .group-title .title-up .text::before {
+    width: 140px;
+  }
+  #recruitment .group-title .title-up .text::after {
+    left: 140px;
+    width: 8px;
+    height: 8px;
+    bottom: 5px;
+  }
+}
+#recruitment .announcement-list {
+  margin-bottom: 20px;
+}
+#recruitment .announcement-list .row {
+  margin-right: -22px;
+  margin-left: -22px;
+}
+#recruitment .announcement-list .row > div {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+#recruitment .announcement-list .row > div .media {
+  margin-bottom: 44px;
+  border-bottom: 10px solid #37adda;
+}
+@media (max-width: 993px) {
+  #recruitment .announcement-list .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  #recruitment .announcement-list .row > div {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #recruitment .announcement-list .row > div .media {
+    margin-bottom: 30px;
+    border-bottom: 6px solid #37adda;
+  }
+}
+#recruitment .recruitment_box .title {
+  font-size: 30px;
+  line-height: 40px;
+  color: #005aaa;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+#recruitment .recruitment_box .content {
+  font-size: 20px;
+  line-height: 30px;
+  color: #4d4d4d;
+  white-space: pre-line;
+}
+@media (max-width: 1600px) {
+  #recruitment .recruitment_box .title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  #recruitment .recruitment_box .content {
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  #recruitment .recruitment_box .title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  #recruitment .recruitment_box .content {
+    font-size: 14px;
+  }
 }
 
 #identify_page, #knowledge, #identify_page_detail {
@@ -8669,6 +8793,198 @@ a:hover {
   font-weight: bold;
   padding: 12px;
   background-color: #d7f1ff;
+}
+
+#course {
+  font-family: "Roboto";
+}
+#course #course-slider .slick-list .slick-track .slider-item {
+  position: relative;
+  margin: 0;
+}
+#course #course-slider .slick-list .slick-track .slider-item .course-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#course #course-slider .slick-list .slick-track .slider-item .course-box .course_form {
+  text-align: center;
+}
+#course #course-slider .slick-list .slick-track .slider-item .course-box .course_form .title {
+  font-size: 34px;
+  line-height: 50px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Roboto";
+  text-align: center;
+  white-space: pre-line;
+  margin-bottom: 32px;
+}
+#course #course-slider .slick-list .slick-track .slider-item .course-box .course_form .form .form-title {
+  white-space: pre-line;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 700;
+}
+#course #course-slider .slick-list .slick-track .slider-item .course-box .course_form .form .form-desc {
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+#course #course-slider .slick-list .slick-track .slider-item .course-box .course_form .form .form-group {
+  margin-bottom: 32px;
+}
+#course #course-slider .slick-list .slick-track .slider-item .course-box .course_form .form .form-group .form-control {
+  border-radius: 6px;
+  background-color: #eff2f6;
+  height: 48px;
+  border: none;
+}
+#course #course-slider .slick-list .slick-track .slider-item .course-box .course_form .form .form-btn .btn {
+  width: 239px;
+  height: 69px;
+  border-radius: 10px;
+  background-color: #37adda;
+  font-size: 20px;
+  color: #fcfcfc;
+  font-weight: 700;
+}
+@media (max-width: 1600px) {
+  #course #course-slider .slick-list .slick-track .slider-item .course-box .course_form .title {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 28px;
+  }
+  #course #course-slider .slick-list .slick-track .slider-item .course-box .course_form .form .form-title {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  #course #course-slider .slick-list .slick-track .slider-item .course-box .course_form .form .form-desc {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  #course #course-slider .slick-list .slick-track .slider-item .course-box .course_form .form .form-group {
+    margin-bottom: 24px;
+  }
+  #course #course-slider .slick-list .slick-track .slider-item .course-box .course_form .form .form-group .form-control {
+    border-radius: 6px;
+    height: 40px;
+  }
+  #course #course-slider .slick-list .slick-track .slider-item .course-box .course_form .form .form-btn {
+    padding-top: 12px;
+  }
+  #course #course-slider .slick-list .slick-track .slider-item .course-box .course_form .form .form-btn .btn {
+    width: 200px;
+    height: 52px;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  #course #course-slider .slick-list .slick-track .slider-item .course-box .course_form .title {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 16px;
+  }
+  #course #course-slider .slick-list .slick-track .slider-item .course-box .course_form .form .form-title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #course #course-slider .slick-list .slick-track .slider-item .course-box .course_form .form .form-desc {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  #course #course-slider .slick-list .slick-track .slider-item .course-box .course_form .form .form-btn {
+    padding-top: 12px;
+  }
+  #course #course-slider .slick-list .slick-track .slider-item .course-box .course_form .form .form-btn .btn {
+    width: 140px;
+    height: 42px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 993px) {
+  #course #course-slider .slick-list .slick-track .slider-item .course-box {
+    display: unset;
+    padding: 60px 0;
+  }
+  #course #course-slider .slick-list .slick-track .slider-item img {
+    height: 600px;
+  }
+}
+@media (max-width: 769px) {
+  #course #course-slider .slick-list .slick-track .slider-item img {
+    height: 760px;
+  }
+}
+@media (max-width: 600px) {
+  #course #course-slider .slick-list .slick-track .slider-item .course-box {
+    padding: 40px 0 60px;
+  }
+  #course #course-slider .slick-list .slick-track .slider-item img {
+    height: 610px;
+  }
+}
+#course #course-slider .slick-arrow {
+  width: 48px;
+  height: 48px;
+  background-color: #005aaa;
+  border: 1px solid #005aaa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 4px;
+  color: #fff;
+}
+#course #course-slider .slick-arrow:hover {
+  color: #005aaa;
+  background-color: #fff;
+}
+#course #course-slider .slick-arrow.fa-chevron-left {
+  position: absolute;
+  top: calc(100% - 46px);
+  left: calc(50% - 54px);
+}
+#course #course-slider .slick-arrow.fa-chevron-right {
+  position: absolute;
+  top: calc(100% - 46px);
+  right: calc(50% - 54px);
+}
+@media (max-width: 600px) {
+  #course #course-slider .slick-arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+  #course #course-slider .slick-arrow.fa-chevron-left {
+    position: absolute;
+    top: calc(100% - 36px);
+    left: calc(50% - 34px);
+  }
+  #course #course-slider .slick-arrow.fa-chevron-right {
+    position: absolute;
+    top: calc(100% - 36px);
+    right: calc(50% - 34px);
+  }
 }
 
 .table-responsive {
