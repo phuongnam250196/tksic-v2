@@ -1,0 +1,19 @@
+#chart_page {
+    height: 800px;
+    width: calc(100% - 60px);
+    margin-left: 60px;
+    .tradingview-widget-container {
+        height: 100%;
+        #tradingview_ad536 {
+            height: 100%;
+        }
+    }
+    @media (max-width: 993px) {
+        height: 600px;
+        width: 100%;
+        margin-left: 0;
+    }
+    @media (max-width: 600px) {
+        height: 500px;
+    }
+}

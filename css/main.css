@@ -4441,7 +4441,7 @@ a:hover {
   #ai .ai-box .ai-vip {
     width: 240px;
     height: 54px;
-    line-height: 64px;
+    line-height: 57px;
     border-radius: 8px;
     font-size: 1.375rem;
     margin-bottom: 40px;
@@ -4976,12 +4976,14 @@ a:hover {
     font-size: 20px;
   }
 }
+@media (max-width: 993px) {
+  #signal .signal-table {
+    width: 1000px;
+  }
+}
 @media (max-width: 600px) {
   #signal .table-responsive {
     margin-bottom: 20px;
-  }
-  #signal .signal-table {
-    width: 600px;
   }
   #signal .signal-table tr td {
     height: 34px;
@@ -6299,6 +6301,144 @@ a:hover {
 .toggleNavRight {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.ai_page {
+  padding: 60px 0 80px;
+}
+@media (max-width: 993px) {
+  .ai_page {
+    padding-bottom: 0;
+  }
+}
+.ai_page #ai .ai-box .list .item .ai-btn {
+  position: absolute;
+  top: calc(100% + 32px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: inline-block;
+  width: 160px;
+  height: 48px;
+  border-radius: 13px;
+  background-color: #2caddb;
+  border: 1px solid #2caddb;
+  font-size: 16px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.ai_page #ai .ai-box .list .item .ai-btn:hover {
+  color: #2caddb;
+  background-color: #fff;
+}
+@media (max-width: 993px) {
+  .ai_page #ai .ai-box .list .item {
+    margin-bottom: 100px;
+  }
+}
+
+.signal_page {
+  padding: 60px 0;
+}
+@media (max-width: 993px) {
+  .signal_page {
+    padding: 40px 0;
+  }
+}
+.signal_page #signal {
+  margin-bottom: 0;
+}
+.signal_page #signal .signal-table tfoot tr td {
+  border-bottom: unset;
+  border-left: unset;
+  border-right: unset;
+  background: unset;
+  padding-top: 24px;
+}
+.signal_page #signal .signal-table tfoot tr td .signal_page-btn {
+  display: inline-block;
+  width: 160px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: #2caddb;
+  border: 1px solid #2caddb;
+  font-size: 16px;
+  color: #ffffff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.signal_page #signal .signal-table tfoot tr td .signal_page-btn:hover {
+  color: #2caddb;
+  background-color: #fff;
+}
+@media (max-width: 993px) {
+  .signal_page #signal .signal-table tfoot tr td {
+    margin-bottom: 100px;
+  }
+}
+.signal_page #signal .signal_page-title {
+  margin-bottom: 52px;
+}
+.signal_page #signal .signal_page-title .title-main {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.signal_page #signal .signal_page-title .signal_page-vip {
+  width: 351px;
+  height: 82px;
+  line-height: 82px;
+  border-radius: 10px;
+  background-color: #2168b1;
+  font-size: 1.8125rem;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 993px) {
+  .signal_page #signal .signal_page-title {
+    margin-bottom: 32px;
+  }
+  .signal_page #signal .signal_page-title .title-main {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .signal_page #signal .signal_page-title .signal_page-vip {
+    width: 270px;
+    height: 60px;
+    line-height: 62px;
+    border-radius: 10px;
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 600px) {
+  .signal_page #signal .signal_page-title .title-main {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .signal_page #signal .signal_page-title .signal_page-vip {
+    width: 270px;
+    height: 60px;
+    line-height: 62px;
+    border-radius: 10px;
+    font-size: 1.25rem;
+  }
 }
 
 .body .ct {
@@ -7742,6 +7882,101 @@ a:hover {
     margin-bottom: 0;
   }
 }
+@media (max-width: 993px) {
+  .investment_principles.risk_consulting {
+    padding-top: 40px;
+  }
+}
+.investment_principles.risk_consulting .about_us.three .box-about_us .group-title .title-up .text::before {
+  width: calc(100% + 15px);
+}
+.investment_principles.risk_consulting .about_us.three .box-about_us .group-title .title-up .text::after {
+  left: calc(100% + 15px);
+}
+.investment_principles.risk_consulting .about_us.three .box-about_us .group-title .desc {
+  white-space: normal !important;
+}
+.investment_principles.risk_consulting .about_us.three .box-about_us .icon-fix-top {
+  top: -115px;
+}
+.investment_principles.risk_consulting .about_us.three .box-about_us .icon-fix-bottom {
+  bottom: -145px;
+}
+@media (max-width: 1600px) {
+  .investment_principles.risk_consulting .about_us.three .box-about_us .group-title .desc {
+    font-size: 16px;
+    width: 90%;
+  }
+  .investment_principles.risk_consulting .about_us.three .box-about_us .icon-fix-top {
+    top: -100px;
+  }
+  .investment_principles.risk_consulting .about_us.three .box-about_us .icon-fix-top img {
+    width: 70%;
+  }
+  .investment_principles.risk_consulting .about_us.three .box-about_us .icon-fix-bottom {
+    bottom: -115px;
+  }
+  .investment_principles.risk_consulting .about_us.three .box-about_us .icon-fix-bottom img {
+    width: 70%;
+  }
+}
+@media (max-width: 993px) {
+  .investment_principles.risk_consulting .about_us.three .box-about_us .group-title .desc {
+    width: 100%;
+  }
+}
+.investment_principles.risk_consulting .about_us_right .box-about_us {
+  width: 600px;
+  margin-left: auto;
+}
+.investment_principles.risk_consulting .about_us_right .box-about_us .desc {
+  width: 100%;
+  white-space: normal !important;
+}
+.investment_principles.risk_consulting .about_us_right .box-about_us .list {
+  padding-top: 32px;
+}
+.investment_principles.risk_consulting .about_us_right .box-about_us .list .media {
+  margin-bottom: 24px;
+}
+.investment_principles.risk_consulting .about_us_right .box-about_us .list .media:last-child {
+  margin-bottom: 0;
+}
+.investment_principles.risk_consulting .about_us_right .box-about_us .list .media .media-body {
+  padding-left: 20px;
+}
+.investment_principles.risk_consulting .about_us_right .box-about_us .list .media .media-body p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #4d4d4d;
+  font-weight: 400;
+}
+@media (max-width: 1600px) {
+  .investment_principles.risk_consulting .about_us_right .box-about_us {
+    width: 90%;
+  }
+  .investment_principles.risk_consulting .about_us_right .box-about_us .desc {
+    font-size: 16px;
+  }
+  .investment_principles.risk_consulting .about_us_right .box-about_us .list {
+    padding-top: 24px;
+  }
+  .investment_principles.risk_consulting .about_us_right .box-about_us .list .media {
+    margin-bottom: 16px;
+  }
+  .investment_principles.risk_consulting .about_us_right .box-about_us .list .media .media-body {
+    padding-left: 16px;
+  }
+  .investment_principles.risk_consulting .about_us_right .box-about_us .list .media .media-body p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 993px) {
+  .investment_principles.risk_consulting .about_us_right .box-about_us {
+    width: 100%;
+  }
+}
 
 #news {
   font-family: "Roboto";
@@ -8985,6 +9220,218 @@ a:hover {
     top: calc(100% - 36px);
     right: calc(50% - 34px);
   }
+}
+
+#chart_page {
+  height: 800px;
+  width: calc(100% - 60px);
+  margin-left: 60px;
+}
+#chart_page .tradingview-widget-container {
+  height: 100%;
+}
+#chart_page .tradingview-widget-container #tradingview_ad536 {
+  height: 100%;
+}
+@media (max-width: 993px) {
+  #chart_page {
+    height: 600px;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media (max-width: 600px) {
+  #chart_page {
+    height: 500px;
+  }
+}
+
+#faq {
+  font-family: "Roboto";
+  padding: 60px 0;
+}
+@media (max-width: 600px) {
+  #faq {
+    padding: 40px 0;
+  }
+}
+#faq .faq-title {
+  height: 296px;
+  border-radius: 25px;
+  background-color: #005aaa;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#faq .faq-title .title {
+  font-size: 35px;
+  line-height: 40px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+}
+#faq .faq-title .faq-fix-1 {
+  position: absolute;
+  top: 50px;
+  left: 60px;
+}
+#faq .faq-title .faq-fix-2 {
+  position: absolute;
+  bottom: 50px;
+  right: 60px;
+}
+@media (max-width: 1600px) {
+  #faq .faq-title {
+    height: 270px;
+    border-radius: 20px;
+  }
+  #faq .faq-title .title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+@media (max-width: 993px) {
+  #faq .faq-title {
+    height: 180px;
+    border-radius: 20px;
+  }
+  #faq .faq-title .title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  #faq .faq-title .faq-fix-1 {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 140px;
+  }
+  #faq .faq-title .faq-fix-2 {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    width: 140px;
+  }
+}
+#faq .faq-box {
+  width: 720px;
+  margin: 0 auto;
+  margin-top: -36px;
+}
+@media (max-width: 993px) {
+  #faq .faq-box {
+    width: 100%;
+  }
+}
+#faq .faq-box .faq-search {
+  margin-bottom: 40px;
+}
+#faq .faq-box .faq-search .input-group {
+  height: 90px;
+  border-radius: 15px;
+  -webkit-filter: drop-shadow(0px 4px 17.5px rgba(56, 109, 182, 0.5));
+          filter: drop-shadow(0px 4px 17.5px rgba(56, 109, 182, 0.5));
+  background-color: #ffffff;
+  padding: 0 40px;
+}
+#faq .faq-box .faq-search .input-group .input-group-prepend {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 20px;
+}
+#faq .faq-box .faq-search .input-group .input-group-prepend i {
+  font-size: 40px;
+  color: #005aaa;
+}
+#faq .faq-box .faq-search .input-group .form-control {
+  height: 100%;
+  border: none;
+}
+#faq .faq-box .faq-search .input-group .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+@media (max-width: 993px) {
+  #faq .faq-box .faq-search {
+    margin-bottom: 32px;
+  }
+  #faq .faq-box .faq-search .input-group {
+    height: 60px;
+    border-radius: 12px;
+    padding: 0 30px;
+  }
+  #faq .faq-box .faq-search .input-group .input-group-prepend {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 10px;
+  }
+  #faq .faq-box .faq-search .input-group .input-group-prepend i {
+    font-size: 30px;
+  }
+}
+#faq .faq-box #accordion .card {
+  border: none;
+  border-bottom: 1px solid #37adda;
+  border-radius: 0;
+  position: relative;
+}
+#faq .faq-box #accordion .card .card-header {
+  background-color: unset;
+  border-bottom: unset;
+  padding: 16px 0 20px;
+}
+#faq .faq-box #accordion .card .card-header .card-link {
+  font-size: 18px;
+  line-height: 20px;
+  color: #005aaa;
+  font-weight: 700;
+}
+#faq .faq-box #accordion .card .collapse .card-body {
+  font-size: 18px;
+  line-height: 25px;
+  color: #213444;
+  padding: 0 40px 20px 0;
+}
+#faq .faq-box #accordion .card .collapse.show + i::before {
+  content: "\f068";
+}
+#faq .faq-box #accordion .card i {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  -webkit-transition: 0.5s all ease-in;
+  transition: 0.5s all ease-in;
+  color: #005aaa;
+  font-size: 20px;
+}
+@media (max-width: 993px) {
+  #faq .faq-box #accordion .card .card-header .card-link {
+    font-size: 16px;
+  }
+  #faq .faq-box #accordion .card .collapse .card-body {
+    font-size: 16px;
+  }
+}
+#faq .faq-box .box-btn {
+  text-align: center;
+  padding-top: 32px;
+}
+#faq .faq-box .box-btn .btn {
+  width: 169px;
+  height: 47px;
+  border-radius: 23px;
+  background-color: #36add9;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .table-responsive {

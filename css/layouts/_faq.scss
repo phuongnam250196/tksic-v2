@@ -1,0 +1,178 @@
+#faq {
+    font-family: "Roboto";
+    padding: 60px 0;
+    @media (max-width: 600px) {
+        padding: 40px 0;
+    }
+    .faq-title {
+        height: 296px;
+        border-radius: 25px;
+        background-color: #005aaa;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .title {
+            font-size: 35px;
+            line-height: 40px;
+            color: #ffffff;
+            font-weight: 700;
+            text-align: center;
+        }
+        .faq-fix-1 {
+            position: absolute;
+            top: 50px;
+            left: 60px;
+        }
+        .faq-fix-2 {
+            position: absolute;
+            bottom: 50px;
+            right: 60px;
+        }
+        @media (max-width: 1600px) {
+            height: 270px;
+            border-radius: 20px;
+            .title {
+                font-size: 28px;
+                line-height: 34px;
+            }
+        }
+        @media (max-width: 993px) {
+            height: 180px;
+            border-radius: 20px;
+            .title {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            .faq-fix-1 {
+                position: absolute;
+                top: 30px;
+                left: 40px;
+                width: 140px;
+            }
+            .faq-fix-2 {
+                position: absolute;
+                bottom: 30px;
+                right: 40px;
+                width: 140px;
+            }
+        }
+    }
+    .faq-box {
+        width: 720px;
+        margin: 0 auto;
+        margin-top: -36px;
+        @media (max-width: 993px) {
+            width: 100%;
+        }
+        .faq-search {
+            margin-bottom: 40px;
+            .input-group {
+                height: 90px;
+                border-radius: 15px;
+                filter: drop-shadow(0px 4px 17.5px rgba(56,109,182,0.5));
+                background-color: #ffffff;
+                padding: 0 40px;
+                .input-group-prepend {
+                    align-items: center;
+                    padding-right: 20px;
+                    i {
+                        font-size: 40px;
+                        color: #005aaa;
+                    }
+                }
+                .form-control {
+                    height: 100%;
+                    border: none;
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+            @media (max-width: 993px) {
+                margin-bottom: 32px;
+                .input-group {
+                    height: 60px;
+                    border-radius: 12px;
+                    padding: 0 30px;
+                    .input-group-prepend {
+                        align-items: center;
+                        padding-right: 10px;
+                        i {
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        #accordion {
+            .card {
+                border: none;
+                border-bottom: 1px solid #37adda;
+                border-radius: 0;
+                position: relative;
+                .card-header {
+                    background-color: unset;
+                    border-bottom: unset;
+                    padding: 16px 0 20px;
+                    .card-link {
+                        font-size: 18px;
+                        line-height: 20px;
+                        color: #005aaa;
+                        font-weight: 700;
+                    }
+                }
+                .collapse {
+                    .card-body {
+                        font-size: 18px;
+                        line-height: 25px;
+                        color: #213444;
+                        padding: 0 40px 20px 0;
+                    }
+                    
+                    &.show + i {
+                        &::before {
+                            content: "\f068";
+                        }
+                    }
+                }
+                i{
+                    position: absolute;
+                    top: 16px;
+                    right: 20px;
+                    transition: 0.5s all ease-in;
+                    color: #005aaa;
+                    font-size: 20px;
+                    // font-weight: bold;
+                }
+            }
+            @media (max-width: 993px) {
+                .card {
+                    .card-header {
+                        .card-link {
+                            font-size: 16px;
+                        }
+                    }
+                    .collapse {
+                        .card-body {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .box-btn {
+            text-align: center;
+            padding-top: 32px;
+            .btn {
+                width: 169px;
+                height: 47px;
+                border-radius: 23px;
+                background-color: #36add9;
+                font-size: 16px;
+                color: #ffffff;
+                font-weight: 700;
+            }
+        }
+    }
+}
