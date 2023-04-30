@@ -8881,153 +8881,80 @@ a:hover {
 
 #economic_calendar {
   font-family: "Roboto";
-  padding-bottom: 100px;
+  padding: 60px 0 80px;
 }
-#economic_calendar .economic_calendar__time {
+@media (max-width: 993px) {
+  #economic_calendar {
+    padding: 40px 0 60px;
+  }
+}
+#economic_calendar .group-title .title-up {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px 0;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 72px;
 }
-#economic_calendar .economic_calendar__time .avatars {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: auto;
+#economic_calendar .group-title .title-up.only-icon {
+  padding-left: 60px;
 }
-#economic_calendar .economic_calendar__time .avatars .avatars__item {
-  border: 2px solid #fff;
+#economic_calendar .group-title .title-up .text {
+  margin-left: 12px;
+  position: relative;
+  font-size: 29px;
+  color: #005aaa;
+  font-weight: 700;
+  padding-bottom: 16px;
+  padding-left: 8px;
+  text-transform: uppercase;
 }
-#economic_calendar .economic_calendar__time .avatars .avatars__item .avatars__image {
-  width: 34px;
-  height: 34px;
+#economic_calendar .group-title .title-up .text::before {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  width: calc(100% + 16px);
+  height: 2px;
+  background-color: #005aaa;
+}
+#economic_calendar .group-title .title-up .text::after {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: calc(100% + 16px);
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: red;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  background-color: #005aaa;
 }
-#economic_calendar .economic_calendar__time .avatars .avatars__item:nth-child(2) {
-  margin-left: -12px;
+@media (max-width: 1600px) {
+  #economic_calendar .group-title .title-up {
+    margin-bottom: 32px;
+  }
+  #economic_calendar .group-title .title-up .img {
+    width: 50px;
+  }
+  #economic_calendar .group-title .title-up .img img {
+    width: 100%;
+  }
+  #economic_calendar .group-title .title-up .text {
+    font-size: 1.25rem;
+  }
+  #economic_calendar .group-title .title-up .text::after {
+    width: 8px;
+    height: 8px;
+    bottom: 5px;
+  }
 }
-#economic_calendar .economic_calendar__time .avatars .avatars__item:nth-child(3) {
-  margin-left: -12px;
+#economic_calendar .economic_calendar_table {
+  height: 600px;
 }
-#economic_calendar .economic_calendar__time .avatars .avatars__item:nth-child(4) {
-  margin-left: -12px;
-  font-size: 12px;
-}
-#economic_calendar .economic_calendar__time .other {
-  margin-left: 20px;
-}
-#economic_calendar .economic_calendar__time .other .__first {
-  color: #1956ff;
-  border-radius: 6px;
-  padding: 10px 16px;
-  background-color: #e3effd;
-  display: inline-block;
-}
-#economic_calendar .economic_calendar__time .other .__first i {
-  color: #1956ff;
-}
-#economic_calendar .economic_calendar__time .other .nav {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  border-left: 1px solid #ddd;
-  padding-left: 20px;
-  margin-left: 20px;
-}
-#economic_calendar .economic_calendar__time .other .nav .nav-item .nav-link.active, #economic_calendar .economic_calendar__time .other .nav .nav-item .around.calculator .box .box-calc .box-calc-l .item.v2 .list .nav-link.child:hover, .around.calculator .box .box-calc .box-calc-l .item.v2 .list #economic_calendar .economic_calendar__time .other .nav .nav-item .nav-link.child:hover {
-  color: #1956ff;
-  border-radius: 6px;
-  padding: 10px 16px;
-  background-color: #e3effd;
-}
-#economic_calendar .economic_calendar_table .table {
-  font-size: 14px;
-}
-#economic_calendar .economic_calendar_table .table tr td {
-  vertical-align: middle;
-  padding: 8px 12px;
-}
-#economic_calendar .economic_calendar_table .table tr td:nth-child(1) {
-  width: 80px;
-}
-#economic_calendar .economic_calendar_table .table tr td:nth-child(2) {
-  width: 160px;
-}
-#economic_calendar .economic_calendar_table .table tr td:nth-child(3) {
-  width: 400px;
-}
-#economic_calendar .economic_calendar_table .table tr td:nth-child(4) {
-  width: 300px;
-}
-#economic_calendar .economic_calendar_table .table tr td:nth-child(5) {
-  width: 230px;
-}
-#economic_calendar .economic_calendar_table .table tr td:nth-child(6) {
-  width: auto;
-}
-#economic_calendar .economic_calendar_table .table .tbl_1 {
-  background-color: red;
-  padding: 2px 6px;
-  border-radius: 4px;
-  color: #fff;
-}
-#economic_calendar .economic_calendar_table .table .tbl_2 img {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-#economic_calendar .economic_calendar_table .table .tbl_3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-#economic_calendar .economic_calendar_table .table .tbl_3 i {
-  padding-right: 20px;
-  color: #055ba9;
-}
-#economic_calendar .economic_calendar_table .table .tbl_3 .dropdown-toggle {
-  color: inherit;
-  text-decoration: none;
-}
-#economic_calendar .economic_calendar_table .table .tbl_4 p {
-  line-height: 1.1;
-}
-#economic_calendar .economic_calendar_table .table .tbl_4 p:last-child {
-  color: red;
-}
-#economic_calendar .economic_calendar_table .table .tbl_5 p {
-  line-height: 1.1;
-}
-#economic_calendar .economic_calendar_table .table .tbl_5 p:last-child {
-  font-weight: bold;
-}
-#economic_calendar .economic_calendar_table .table .tbl_6 p {
-  line-height: 1.1;
-}
-#economic_calendar .economic_calendar_table .table .tbl_6 p:last-child {
-  font-weight: bold;
-}
-#economic_calendar .economic_calendar_table .table .tbl_date {
-  color: #333;
-  font-weight: bold;
-  padding: 12px;
-  background-color: #d7f1ff;
+@media (max-width: 600px) {
+  #economic_calendar .economic_calendar_table {
+    height: 440px;
+  }
 }
 
 #course {
