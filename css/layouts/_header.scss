@@ -19,10 +19,9 @@
   }
 
   .logo {
-    margin: 0 rem(32);
     position: absolute;
     top: 10px;
-    left: 72px;
+    left: 104px;
 
     img {
       width: 100px;
@@ -30,7 +29,10 @@
       height: auto;
     }
 
-    @media (max-width: 1500px) {
+    @media (max-width: 1600px) {
+      left: 52px;
+    }
+    @media (max-width: 1450px) {
       display: none;
     }
   }
@@ -40,11 +42,11 @@
     justify-content: space-between;
     height: 72px;
 
-    @media (max-width: 993px) {
+    @media (max-width: 1200px) {
       justify-content: center;
     }
 
-    @media (max-width: 993px) {
+    @media (max-width: 1200px) {
       justify-content: center;
     }
 
@@ -133,15 +135,17 @@
             .__content {
               margin-left: calc(46px + 16px);
               padding-top: 24px;
-              display: flex;
               .__content-ul {
-                &.left {
-                  width: 65%;
-                }
-                &.right {
-                  width: 35%;
-                }
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
                 li {
+                  &:nth-child(2n+1) {
+                    width: 65%;
+                  }
+                  &:nth-child(2n) {
+                    width: 35%;
+                  }
                   a {
                     font-size: 18px;
                     line-height: 40px;
@@ -198,7 +202,7 @@
         }
       }
 
-      @media (max-width: 993px) {
+      @media (max-width: 1200px) {
         display: none;
       }
 
@@ -380,7 +384,7 @@
         }
       }
 
-      @media (max-width: 993px) {
+      @media (max-width: 1200px) {
         width: 100%;
         justify-content: space-between;
         .logo-mobile {
