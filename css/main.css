@@ -2830,7 +2830,7 @@ a:hover {
 }
 @media (max-width: 1600px) {
   #header .logo {
-    left: 52px;
+    left: 72px;
   }
 }
 @media (max-width: 1450px) {
@@ -3450,16 +3450,17 @@ a:hover {
     border-top-right-radius: 0.75rem;
   }
   #menu .main-menu .top .logo {
-    width: 3.125rem;
-    padding: 12px 18px;
+    width: 4.375rem;
+    padding: 16px 24px;
   }
   #menu .main-menu .top .menu > li .title {
-    height: 44px;
-    line-height: 44px;
+    height: 52px;
+    line-height: 52px;
     position: relative;
   }
   #menu .main-menu .top .menu > li .title .ic {
-    padding: 13px 18px;
+    width: 4.375rem;
+    padding: 0 24px;
   }
   #menu .main-menu .top .menu > li .title span {
     font-size: 14px;
@@ -3471,15 +3472,15 @@ a:hover {
     padding-left: 64px;
   }
   #menu .main-menu .top .menu > li .sub-menu li a {
-    height: 44px;
-    line-height: 44px;
+    height: 52px;
+    line-height: 52px;
     font-size: 13px;
   }
   #menu .main-menu .bottom .logout img {
     width: 28px;
   }
   #menu .main-menu.menu-cols {
-    width: 50px !important;
+    width: 70px !important;
   }
   #menu .main-menu.menu-cols .top .menu > li .sub-menu {
     width: 170px;
