@@ -571,10 +571,16 @@
           .title {
             height: 60px;
             position: relative;
+            &>a {
+              // display: block;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 100%;
+            }
             // background-color: blue;
             .ic {
-              width: 60px;
-              padding: 20px;
+              width: 20px;
             }
             span {
               font-size: 16px;
@@ -704,10 +710,10 @@
               line-height: 52px;
               position: relative;
               // background-color: blue;
-              .ic {
-                width: rem(70);
-                padding: 0 24px;
-              }
+              // .ic {
+              //   width: rem(70);
+              //   padding: 0 24px;
+              // }
               span {
                 font-size: 14px;
               }
@@ -772,13 +778,17 @@
         .menu {
           &>li {
             .title {
-              height: 44px;
-              line-height: 44px;
+              height: 50px;
               position: relative;
               // background-color: blue;
-              .ic {
-                padding: 13px 18px;
+              display: flex;
+              align-items: center;
+              &>a {
+                padding: 0 12px;
               }
+              // .ic {
+              //   padding: 13px 18px;
+              // }
               span {
                 font-size: 14px;
               }

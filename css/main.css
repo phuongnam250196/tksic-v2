@@ -3335,9 +3335,20 @@ a:hover {
   height: 60px;
   position: relative;
 }
+#menu .main-menu .top .menu > li .title > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
 #menu .main-menu .top .menu > li .title .ic {
-  width: 60px;
-  padding: 20px;
+  width: 20px;
 }
 #menu .main-menu .top .menu > li .title span {
   font-size: 16px;
@@ -3458,10 +3469,6 @@ a:hover {
     line-height: 52px;
     position: relative;
   }
-  #menu .main-menu .top .menu > li .title .ic {
-    width: 4.375rem;
-    padding: 0 24px;
-  }
   #menu .main-menu .top .menu > li .title span {
     font-size: 14px;
   }
@@ -3504,12 +3511,17 @@ a:hover {
     padding: 12px 18px;
   }
   #menu .main-menu .top .menu > li .title {
-    height: 44px;
-    line-height: 44px;
+    height: 50px;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  #menu .main-menu .top .menu > li .title .ic {
-    padding: 13px 18px;
+  #menu .main-menu .top .menu > li .title > a {
+    padding: 0 12px;
   }
   #menu .main-menu .top .menu > li .title span {
     font-size: 14px;
@@ -6176,7 +6188,7 @@ a:hover {
 }
 
 .menu-cols {
-  width: 60px !important;
+  width: 68px !important;
 }
 .menu-cols .title span {
   visibility: hidden;
