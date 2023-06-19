@@ -325,6 +325,9 @@
           &:hover {
             opacity: 0.8;
           }
+          &:last-child {
+            display: none;
+          }
         }
       }
 
@@ -422,54 +425,49 @@
         }
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 993px) {
+        .register-user {
+          display: none;
+        }
+        .search {
+          display: none;
+        }
         .language {
           display: none;
         }
-        .logo-mobile {
-          padding-left: 24px;
-        }
         .login-user {
-          margin: 0 8px;
           a {
-            font-size: 12px;
-            width: 90px;
-            height: 28px;
-            border-radius: 4px;
-            padding-left: 4px;
-            padding-right: 4px;
-            img {
-              width: 12px;
+            background: unset;
+            width: 20px;
+            padding: 4px 0;
+            margin: unset;
+            &:first-child {
+              display: none;
             }
-          }
-        }
-        .register-user {
-          width: 60px;
-          a {
-            font-size: 12px;
-            border-bottom: 2px solid $c17;
-            img {
-              width: 12px;
+            &:last-child {
+              display: inline-block;
             }
           }
         }
       }
+
+      @media (max-width: 768px) {
+        .logo-mobile {
+          padding-left: 24px;
+        }
+        // .register-user {
+        //   width: 60px;
+        //   a {
+        //     font-size: 12px;
+        //     border-bottom: 2px solid $c17;
+        //     img {
+        //       width: 12px;
+        //     }
+        //   }
+        // }
+      }
       
       @media (max-width: 488px) {
-        .login-user {
-          // margin-right: 0;
-          a {
-            width: 90px;
-            font-size: 12px;
-            padding: 0 4px;
-            height: 28px;
-            border-radius: 4px;
-            img {
-              width: 13px;
-            }
-          }
-        }
-
         .search {
           flex: auto;
           .input-group {
@@ -558,6 +556,18 @@
       }
       .menu {
         width: 100%;
+        &.menu-pc {
+          display: block;
+          @media (max-width: 993px) {
+            display: none;
+          }
+        }
+        &.menu-mobile {
+          display: none;
+          @media (max-width: 993px) {
+            display: block;
+          }
+        }
         &>li {
           &.active {
             .title {
@@ -637,6 +647,18 @@
       .top {
         .menu {
           width: 100%;
+          &.menu-pc {
+            display: block;
+            @media (max-width: 993px) {
+              display: none;
+            }
+          }
+          &.menu-mobile {
+            display: none;
+            @media (max-width: 993px) {
+              display: block;
+            }
+          }
           &>li {
             position: relative;
             &:hover {
@@ -888,9 +910,9 @@
   display: none;
   @media (max-width: 993px) {
       display: block;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 4px;
+      // position: absolute;
+      // top: 50%;
+      // transform: translateY(-50%);
+      // left: 4px;
   }
 }
