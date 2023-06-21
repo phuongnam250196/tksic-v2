@@ -2701,7 +2701,12 @@ a:hover {
   color: #37adda;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1180px) {
+  .container-c {
+    max-width: 1070px;
+  }
+}
+@media (min-width: 1400px) {
   .container {
     max-width: 1140px;
   }
@@ -2833,7 +2838,7 @@ a:hover {
     left: 72px;
   }
 }
-@media (max-width: 1450px) {
+@media (max-width: 1521px) {
   #header .logo {
     display: none;
   }
@@ -2847,14 +2852,7 @@ a:hover {
           justify-content: space-between;
   height: 72px;
 }
-@media (max-width: 1200px) {
-  #header .nav {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   #header .nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -3004,7 +3002,7 @@ a:hover {
     font-size: 1rem;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   #header .nav .nav-left {
     display: none;
   }
@@ -3175,12 +3173,12 @@ a:hover {
     margin: 0 12px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   #header .nav .nav-right .search .input-group input {
     width: 12.5rem;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   #header .nav .nav-right {
     width: 100%;
     -webkit-box-pack: justify;
@@ -3298,6 +3296,7 @@ a:hover {
   transition: 0.3s;
   border-top-right-radius: 1rem;
   background-color: #00a3f9;
+  overflow: hidden;
 }
 #menu .main-menu .top {
   width: 100%;
