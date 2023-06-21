@@ -3294,8 +3294,8 @@ a:hover {
   background: url(./../imgs/bg-nav.png) no-repeat;
   -webkit-transform: none;
           transform: none;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   border-top-right-radius: 1rem;
   background-color: #00a3f9;
 }
@@ -3530,6 +3530,7 @@ a:hover {
   #menu .main-menu .top .logo {
     width: 3.125rem;
     padding: 12px 14px;
+    display: block;
   }
   #menu .main-menu .top .menu > li .title {
     height: 50px;
@@ -3572,6 +3573,9 @@ a:hover {
   }
   #menu .main-menu.menu-cols .top .menu > li .sub-menu li {
     padding-left: 12px;
+  }
+  #menu .main-menu.menu-cols .top .logo {
+    display: none;
   }
 }
 #menu .manche {
