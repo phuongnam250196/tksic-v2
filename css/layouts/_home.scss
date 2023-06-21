@@ -1,3 +1,8 @@
+body:has(.main-menu:not(nav.menu-cols)) {
+    overflow: hidden;
+    // height: 100%;
+}
+
 #investment {
     padding: 36px 0;
 

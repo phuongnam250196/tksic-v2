@@ -3604,6 +3604,10 @@ a:hover {
   }
 }
 
+body:has(.main-menu:not(nav.menu-cols)) {
+  overflow: hidden;
+}
+
 #investment {
   padding: 36px 0;
 }
