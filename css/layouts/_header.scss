@@ -537,7 +537,7 @@
     transition: 0.3s;
     border-top-right-radius: rem(16);
     background-color: #00a3f9;
-    overflow: hidden;
+    overflow: auto;
 
     .top {
       width: 100%;
@@ -641,6 +641,7 @@
     }
 
     &.menu-cols {
+      overflow: hidden;
       .top {
         .menu {
           width: 100%;

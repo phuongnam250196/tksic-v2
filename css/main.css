@@ -3296,7 +3296,7 @@ a:hover {
   transition: 0.3s;
   border-top-right-radius: 1rem;
   background-color: #00a3f9;
-  overflow: hidden;
+  overflow: auto;
 }
 #menu .main-menu .top {
   width: 100%;
@@ -3399,6 +3399,9 @@ a:hover {
 }
 #menu .main-menu .bottom a {
   color: #fff;
+}
+#menu .main-menu.menu-cols {
+  overflow: hidden;
 }
 #menu .main-menu.menu-cols .top .menu {
   width: 100%;
