@@ -579,8 +579,11 @@
           .title {
             height: 60px;
             position: relative;
+            display: flex;
+            align-items: center;
             &>a {
               // display: block;
+              padding: 12px;
               display: flex;
               align-items: center;
               justify-content: center;
@@ -671,6 +674,10 @@
             }
             .title {
               cursor: pointer;
+              display: block;
+              &>a {
+                padding: 0;
+              }
             }
             .sub-menu {
               display: none;

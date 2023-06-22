@@ -2177,7 +2177,7 @@ body {
     margin-right: -15px;
   }
   .col-mar-35 [class*=col-],
-.col-mar-35 .col {
+  .col-mar-35 .col {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -3338,8 +3338,15 @@ a:hover {
 #menu .main-menu .top .menu > li .title {
   height: 60px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #menu .main-menu .top .menu > li .title > a {
+  padding: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3433,6 +3440,10 @@ a:hover {
 }
 #menu .main-menu.menu-cols .top .menu > li .title {
   cursor: pointer;
+  display: block;
+}
+#menu .main-menu.menu-cols .top .menu > li .title > a {
+  padding: 0;
 }
 #menu .main-menu.menu-cols .top .menu > li .sub-menu {
   display: none;
